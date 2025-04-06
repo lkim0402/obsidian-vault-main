@@ -1,0 +1,8 @@
+- Lets you take a big data set and magically compress it to a much smaller dataset while losing as little information as possible
+- often used as a preprocessing stage
+- some algorithms
+	- Principle Component Analysis (PCA)
+	- Linear Discriminant Analysis (LDA)
+	- Generalized Discriminant Analysis (GDA)
+	- Singular Value Decomposition (SVD)
+	- Latent Dirichlet allocation (LDA)

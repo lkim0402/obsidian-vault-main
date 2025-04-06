@@ -1,0 +1,5 @@
+- A powerful, multitasking, multi-user [[Operating systems (OS)|OS]] that serves as the basis for many modern [[Operating systems (OS)|OS]] 
+	- multitasking: can run multiple applications at the same time
+	- multi-user: can have different permission levels active at the same time
+- Was first owned by AT&T
+	- which means proprietary

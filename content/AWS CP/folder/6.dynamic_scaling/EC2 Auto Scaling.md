@@ -1,0 +1,31 @@
+- Automatically add/remove EC2 instances based on certain conditions you set
+- Ensures sufficient capacity at all times, without over-provisioning
+- Scaling - "adding more instances"
+## Creating an Auto Scaling Group
+- `EC2 console >  Auto Scaling Groups`
+- You create a group of rules that will ensure that a certain amount of EC2 instances are running based on certain conditions
+	- Choose a **launch template**
+		- a feature that tells AWS how your [[EC2|EC2 instances]] should be configured
+		- since we won't be creating them manually
+		- Creating a launch template -> same with EC2 launch wizard
+		- You need to choose [[Virtual Private Cloud (VPC)|VPCs and subnets]] that can be used for launching
+	- Choose a load balancer ([[Elastic Load Balancer (ELB)]]) + target group
+		- make sure u choose the same [[Virtual Private Cloud (VPC)|VPCs and subnets]] that you chose in the previous step
+		- Set up the rule for which kind of requests you want to listen
+			- ex. HTTPs requests
+			- Create a new target group - a collection of instances (EC2, containers, IP addresses, etc.) that receive traffic from a load balancer 
+				- group of instances that will be used for forwarding requests to
+			- If a load balancer is connected to an auto scaling group, then it will automatically add all instances that are created by that auto scaling group to this target group
+		- Health check
+			- is an instance healthy - capable of receiving requests
+	- Choose Auto scaling conditions
+		- set the capacities you want to have for your instances
+			- desired capacity - the default capacity you want to have
+			- minimum/maximum capacity
+		- scaling policy
+			- define the metric where you want to scale up
+			- CPU utilization, network, etc
+	- Choose notifs
+		- maybe an email so you know when an instance is added
+	- Tags
+		- identify resources

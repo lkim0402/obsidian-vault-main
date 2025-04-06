@@ -1,0 +1,5 @@
+- We sometimes not only want agents talking to each other but also humans in the loop![[Pasted image 20240813144824.png]]
+- The human in the loop ensures messages are handled approapriately either by automation or by human intervention
+- Example Scenario: Let’s say you are developing a customer support system using AutoGen, and it’s designed to handle common inquiries about product shipping.
+	- **Auto Reply**: The AI agent receives a query like, "Where is my order?" It checks the tracking information and automatically replies, "Your order is expected to arrive by August 20th."
+	- **Human Reply**: However, if the customer replies with, "That’s not acceptable, I need it sooner," the AI might escalate the conversation to a human agent. The human can then reply with a personalized message like, "I understand your concern. Let me expedite the shipping for you and provide you with an updated delivery date."

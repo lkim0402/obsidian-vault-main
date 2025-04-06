@@ -1,0 +1,13 @@
+
+- `Time.deltaTime`
+	- interval in seconds from the last frame to the current one (duration of 1 frame)
+	- Can tell us how long each frame took to execute
+	- When we multiply something by `Time.deltaTime` it makes out game "frame rate independent"
+	- Example: On Update (each frame), move 1 unit to the left
+		- Slow computer: 10 fps, so duration of 1 frame is 0.1s
+			- Distance per second: 1 unit * 10 fps * 0.1 deltaTime = 1
+		- Fast computer: 100 fps, so duration of 1 frame is 0.01s
+			- Distance per second: 1 unit * 100 fps * 0.01 deltaTime = 1
+		- So both dps is 1 	
+- `Time.time`
+	- The amount of time that elapses

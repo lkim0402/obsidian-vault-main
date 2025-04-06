@@ -1,0 +1,22 @@
+> Superuser Do
+	- related: [[User Management Basics]]
+- important because
+	- we need it to keep our system up to date / install additional tools
+- Elevates privileges temporarily
+	- If you use sudo, you are temporarily borrowing root privileges. 
+	- Your user is listed in the **sudoers file** (`/etc/sudoers`) or is part of the **sudo group**.
+	- type `groups` in bash and you will see your name
+	- This method requires your password, not the root password.
+		- Imagine a computer with **multiple users**.
+		- Not everyone should have the power to run `sudo` and get root access.
+		- Imagine ur user is in the sudoers list, so ur allowed to use sudo
+- `sudo ls /root`
+	- `/root` is the home directory of the super user (it's not under`/home/(user)`) 
+	- as normal user we're not allowed, only the root user can access it
+	- but `sudo` elevates our privileges, which allows us to access it *temporariliy*
+- be careful with `sudo`, always make sure you understand what a command does
+	- ex. `sudo rm -f /etc` would destroy our entire system without even giving a msg lol
+- if `sudo` doesnt work
+	- [udemy lecture link](https://www.udemy.com/course/mastering-linux/learn/lecture/39612878#overview)
+	- maybe system is configured that your default regular user does not have this additional options to use sudo
+	- might need to create new user and give this user administrative privileges, then try using `sudo` while logged into this new user account

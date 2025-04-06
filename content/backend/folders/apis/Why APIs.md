@@ -1,0 +1,8 @@
+- typical scenario
+- We have a web/mobile app + a [[Backend Explained|backend]] HTTP [[APIs|API]] that we wanna communicate
+- Code is in the cloud
+- To trigger the code to display things in the user interface, we typically use [[HTTP requests (Express)|HTTP requests]]
+- So we deal with servers that deal with incoming requests and return responses (any data)
+- Such data-driven APIs are typically build as [[APIs#REST API|REST APIs]] or [[APIs#GraphQL|GraphQL APIs]]
+	- both can be built with code, so you could run the code in an [[EC2|EC2 instance]] but also in a [[Containers|container]]
+	- You don't even have to code them with AWS [[API Gateway]]
