@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "lkim0402.github.io/obsidian-vault-main/",
+    baseUrl: "https://lkim0402.github.io/obsidian-vault-main",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
