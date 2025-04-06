@@ -1,0 +1,11 @@
+{
+  "accentColor": "",
+  "theme": "obsidian",
+  "cssTheme": "Vanilla AMOLED",
+  "enabledCssSnippets": [
+    "myfont",
+    "Iterative Rainbow Folder Backgrounds",
+    "Iterative Rainbow Folder Icons",
+    "Iterative Rainbow Folder Titles"
+  ]
+}

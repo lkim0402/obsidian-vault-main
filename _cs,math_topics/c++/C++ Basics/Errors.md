@@ -1,0 +1,16 @@
+### Categories
+- Compile-time errors
+	- Errors found by compiler
+	- Syntax errors, type errors
+- Link-time errors
+	- Errors found by the linker when it's trying to combine object files into an executable program
+	- Common errors
+		- Using a function that was never defined (more on this later)
+		- Writing `Main()` instead of `main()`
+- Run-time errors
+	- Errors found by checks in a running program
+	- Common errors
+		- Division by zero also known as _division error_. These types of error are hard to find as the compiler doesn’t point to the line at which the error occurs.
+		- Trying to open a file that doesn’t exist
+- Logic errors
+	- Errors found by the programmer looking for  causes of erroneous results

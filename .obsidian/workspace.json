@@ -1,0 +1,377 @@
+{
+  "main": {
+    "id": "74393ca1826364fc",
+    "type": "split",
+    "children": [
+      {
+        "id": "7965ab90560278fd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3d259bc542f6f7c9",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "empty",
+              "state": {},
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "d382a0adffa57bfd",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cybersecurity/Cybersecurity.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Cybersecurity"
+            }
+          },
+          {
+            "id": "b33994b2f1b01552",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
+            }
+          },
+          {
+            "id": "14ad2b340b2ff76b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "How I passed the AWS Certified Cloud Practitioner.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "How I passed the AWS Certified Cloud Practitioner"
+            }
+          },
+          {
+            "id": "b16ec894a11bc8a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2_backend/folders/tools/Server-side API Requests + Axios.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Server-side API Requests + Axios"
+            }
+          },
+          {
+            "id": "7fa1b05f7354d742",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2_backend/folders/tools/HTTP requests (Express).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "HTTP requests (Express)"
+            }
+          },
+          {
+            "id": "f299253b960d93da",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2_backend/folders/tools/Express.js.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Express.js"
+            }
+          },
+          {
+            "id": "b459da5330145258",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog checklist.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "blog checklist"
+            }
+          },
+          {
+            "id": "8077a4a7b6c19602",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "How I passed the AWS Certified Cloud Practitioner.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "How I passed the AWS Certified Cloud Practitioner"
+            }
+          },
+          {
+            "id": "9889337249579cec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS CP/Cloud Practitioner.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cloud Practitioner"
+            }
+          },
+          {
+            "id": "b3e519ea7c444643",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS CP/folder/7.file_storage/S3 (Simple Storage Service).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "S3 (Simple Storage Service)"
+            }
+          },
+          {
+            "id": "5305dd9c735a17dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          }
+        ],
+        "currentTab": 11
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "315bb9719908fa99",
+    "type": "split",
+    "children": [
+      {
+        "id": "0c1f1a707640bc72",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8c64ebe74bf5ae99",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "2be8a32d7cebe64c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "AWS CP/Cloud Practitioner.md",
+                "followCursor": false,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Cloud Practitioner"
+            }
+          },
+          {
+            "id": "b7cb731459764073",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "dca6386218bab211",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "556a363ae1ee5e1e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "36205c9758c66eaf",
+    "type": "split",
+    "children": [
+      {
+        "id": "fdaf138d440b6c5e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eab0b4f7f8867113",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2_backend/folders/db/MongoDB.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for MongoDB"
+            }
+          },
+          {
+            "id": "7f1c153fdb6b645a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "2_backend/folders/db/MongoDB.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from MongoDB"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 435.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "github-sync:Sync with Remote": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "publish:Publish changes...": false
+    }
+  },
+  "active": "5305dd9c735a17dc",
+  "lastOpenFiles": [
+    "AWS CP/folder/7.file_storage/S3 (Simple Storage Service).md",
+    "index.md",
+    "How I created this blog.md",
+    "How I passed the AWS Certified Cloud Practitioner.md",
+    "blog checklist.md",
+    "python/Functions 1",
+    "python",
+    "AWS CP/folder/4.compute/EC2.md",
+    "AWS CP/Cloud Practitioner.md",
+    "How I made this blog.md",
+    "frontend/folders/React/Props (React).md",
+    "cybersecurity/Cybersecurity.md",
+    "backend/folders/tools/Express.js.md",
+    "AWS CP/folder/18.others/AI+ML services.md",
+    "AWS CP/folder/8.dbs/RDS (Relational database service).md",
+    "AWS CP/folder/6.dynamic_scaling/Elastic Load Balancer (ELB).md",
+    "AWS CP/folder/9.networking/ACM (AWS Certificate Manager).md",
+    "AWS CP/folder/17.dev_tools/A typical workflow.md",
+    "AWS CP/folder/17.dev_tools/CodeBuild &  CodeArtifact.md",
+    "AWS CP/folder/14.managing/Systems Manager.md",
+    "AWS CP/folder/14.managing/AWS OpsWorks (End Of Life..).md",
+    "AWS CP/folder/16.management/RAM (Resource Access Manager).md",
+    "AWS CP/folder/19.best/The Well-Architected Framework.md",
+    "AWS CP/folder/15.data/AWS Kinesis.md",
+    "AWS CP/folder/1.getting_started/Basics - Course Supplement.md",
+    "AWS CP/folder/15.data/Athena.md",
+    "AWS CP/folder/8.dbs/DynamoDB.md",
+    "backend/folders/apis",
+    "AWS CP/_resources/Pasted image 20250329222323.png",
+    "AWS CP/_resources/Pasted image 20250329204620.png",
+    "AWS CP/_resources/Pasted image 20250329203030.png",
+    "AWS CP/_resources/Pasted image 20250329150501.png",
+    "AWS CP/_resources/Pasted image 20250329140528.png",
+    "AWS CP/_resources/Pasted image 20250329140500.png",
+    "AWS CP/_resources/Pasted image 20250314190146.png",
+    "AWS CP/_resources/{1F7F7F01-FDC9-4A2F-A8A6-BA469722085C}.png",
+    "AWS CP/_resources/{2F068F9B-7C0F-4030-B444-14E67C84A4A3}.png",
+    "AWS CP/_resources/{5EBB099F-C653-4C68-9424-CBE5403FBD1D}.png",
+    "AWS CP/folder/20.beyond",
+    "AWS CP/folder/19.best",
+    "backend/folders/tools",
+    "backend/folders/basics",
+    "backend/folders/db",
+    "backend/folders",
+    "backend/_resources",
+    "Untitled.canvas"
+  ]
+}

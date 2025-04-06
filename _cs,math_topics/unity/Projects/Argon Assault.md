@@ -1,0 +1,26 @@
+> Game Theme: You must save your planet, Argon, from destruction by an invading force!
+- Overview: Features
+	- Camera is on a rail/path camera
+	- Player 
+		- moves horizontal/vertical
+		- can shoot bullets (damage to opponent)
+	- Enemies
+		- Fly on paths (or stationary)
+		- Might shoot
+		- Health
+			- enemies have health that depletes when shot
+		- should travel on paths and be hand placed by the designer
+	- Scores
+		- Points for killing enemies
+	- Game loop
+		- Upon dying, player restarts
+- Game design
+	- Player experience: chaos
+	- Core Mechanic: Dodge and shoot
+	- Core game loop: Get as far as possible w/o dying in order to get the highest score possible. Start from beginning when dying.
+- Other features
+	- multiple levels - finish level and load next
+	- pickups - flying over a shield pickup will increate the player's shields
+	- player shield - when damaged, the player's field depletes
+	- momentary invulnerability - after taking damage, the player cannot take damage again for X time
+	- weapon upgrade - flying over a pickup could increase weapon damage

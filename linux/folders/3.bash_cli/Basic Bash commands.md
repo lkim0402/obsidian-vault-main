@@ -1,0 +1,160 @@
+> One Bash command: `command/program option(s) argument(s)`
+- related
+	- [[File directories in Linux]]
+	- [[Linux]]
+- Commands for package management
+	- [[Package Management]]
+# Basic Commands
+
+- Executing multiple commands
+	- Just add a semicolon
+	- `command1; command2;`
+		- can optionally omit the last ;
+	- `echo -n 'Hello'; echo 'World'`
+
+- `echo`
+	- allows us to output text in the terminal
+	- string wrapped in **single quotes**
+	- `echo -n 'I love Bash'`
+		- `echo` -> command
+		- `-n` -> option(s)
+		- `I love Bash` -> argument(s)
+	- options
+		- `-n`
+			- by default, it will output a line break at the end
+			- we can disable this with the option `-n`
+		- `-e`
+			- enables backlash escapes 
+			- `echo -e 'Line \nLine2'`
+	-  (you can combine options
+		- `echo -en 'I love Bash!\n'` (order x matter mostly, depends on the command)
+		- `echo -e -n 'I love Bash!\n'`
+- `pwd` 
+	- print working directory -> gives us current directory
+	- certain shells might be configured in a way that they show us the current directory we're at
+		- `leejun@leejun-VirtualBox:~$` -> the ~ tells us that we're rn in our home directory (our user folder) . Can be configured.
+- `cd [directory_name]`
+	- change directory
+	- just `~` -> user home directory (like `/home/leejun)
+		- `cd ~/Desktop`
+	- `cd /` 
+		- going into the absolute root folder path where everything starts
+	- `cd ..`
+		- going up to parent
+	- cd `../..`
+		- going up 2 parents
+	- `cd ~` or `cd`
+		- always goes to user's home directory (no matter where you are)
+- `ls`
+	- prints the contents of working directory
+	- `ls [options..] [path]`
+	- options
+		- `-a`: lists all entries including hidden files
+		- `-r`: reverse order while sorting
+		- `-t`: sort by modification time, newest first
+		- `-l`: long format (includes timestamp)
+		- `--color={always,never,auto}`: enables colorful output (enabled in ubuntu by default)
+	- Can also specify a path we want to list
+		- `ls -ta --color ~/Desktop`
+		- `ls ready/`
+## Getting help
+- `--help/ -h`
+	- a built-in "usage" of the command, and not all commands implement it, or at least not the same way
+	- just add this after the command
+	- `ls -h`
+	- shows possible list of args
+- `man`
+	- a command by itself which is a pager program that reads manual
+	- `man ls`
+	- man pages (documentation) must be installed on your system!
+	- (it seems like ppl usually prefer `man` than `help`)
+## File Management
+- `touch`
+	- create 1 or more empty file(s)
+	- `touch test1.txt test2.txt`
+	- actual use case
+		- it modifies the timestamp of a file!
+		- if file alr exists, only its timestamp will be modified. Otherwise, a new (and empty) file is created!
+	- use `.` to create hidden files
+- `mkdir`
+	- creates a new directory
+- `mv <file> <destination>/ `
+	- moves an existing file to another location
+		- `mv test.txt folder/`
+	- can also be used to rename an existing file
+		- `mv test.txt test2.txt`
+	- both at once
+		- `mv text.txt folder/test2.txt`
+- `cp`
+	- copy existing file(s)
+	- `cp -R` : copies a whole folder
+	- `cp text1.txt text2.txt`
+		- will **copy the contents of `text1.txt` into a new file called `text2.txt`**.
+	- `cp text1.txt newFolder`
+	- `cp text1.txt newFolder/text2.txt`
+- `rm`
+	- removes a file(s)
+	- for deleting a directory, use the option `-r`
+		- works for empty and non-empty directories
+	- deletes it PERMANENTLY
+- `rmdir`
+	- removes empty directory (way safer than `rm -r`)
+- `tree`
+	- shows tree structure
+- `find`
+	- provide path as first parameter
+	- we get a list of all the files & folders in the path/folder (ex. `find .`)
+	- filter: type
+		- `find . -type f` (type file - f, type directory - d)
+	- filter: modification within the last 7 days
+		- `find . -type f -mtime-7`
+	- filter: files larger than 10MB
+		- `find . -type f -size +10M`
+	- delete all empty files in a directory
+		- `find . -empty -delete`
+## File Management - text
+- `cat`
+	- allows to print the contents of a file
+	- can actually kinda print binary data (but it might not work properly or break the terminal)
+	- might cut the top parts of the file if file too big
+- `head`
+	- shows the start of a text file
+	- we can specify the Parameter `-n` for the number of lines
+	- `head -n 5 data.txt`
+- `tail`
+	- read file from the end
+	- same options as `head`
+	- `tail -n 5 data.txt`
+- `less`
+	- we can use this to read large files
+	- arrow keys - navigate through the tile
+	- f (forward) and b (backward) - navigate a whole page ahead or back 
+	- `50p` - navigating to percentage of our content (ex. to 50%)
+	- `=`  - shows our current progress
+	- `-N` - shows rows
+	- search
+		- `/search term` - forward search
+		- `?search term` - backward search
+	- `q` - quit
+	- waaay more options but these are the most important
+- `wc`
+	- usually used to check if file is big or not (with the `-l` flag)
+	- `wc file.txt` -> same as `wc -lwc file.txt`
+	- number of lines, words, bytes
+	- can use `-l, -w, -c` flags separately (most important flags)
+- `du` (disk usage)
+	- calculates the size of all items in the folder (or we can pass in a file name as parameter)
+	- `du -s` - to get summary
+	- `du romeo.txt`
+	- the unit depends (`-b` for bytes, `-k` for kilobytes, `-h` for human readable format)
+		- ubuntu usually tells the side in kb w/o the flags
+## Editing files w/ nano
+- nano
+	- no built in text editor for bash, so we have to install additional software for that
+	- 4 popular options
+		- pico / nano (upgraded ver of pico) - simple editor for text files in bash
+		- vi / vim (upgraded ver of vi) - more advanced text editor
+	- Install process depends on the system you're using
+- `nano text.txt`
+	- creates new file if it doesn't exist
+- `Ctrl + O` - write out/save

@@ -1,0 +1,7 @@
+- ForkJoin Parallelism
+- Efficiency analysis (including work, span, perfect linear speedup, and Amdahl’s Law)
+- ForkJoin applications:
+    - Reduce: Parallel sum, max, find, etc.
+    - Map: vector addition, function application, etc.
+- Parallel Prefix Sum
+- Parallel Filter

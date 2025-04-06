@@ -1,0 +1,13 @@
+> Pretty much works with any programming language!
+- the reason a language doesn't really matter is because as long as you use something to generate [[== HTML ==|HTML]], [[== CSS ==|CSS]], [[== JavaScript ==|JS]] files to send back over to the [[== Frontend ==|frontend]], then it doesnt really matter what language you use to do that
+- most common languages + backend frameworks
+	- java, java spring
+	- ruby, ruby on rails 
+	- php, Laravel
+	- c#, ASP.NET
+	- python, Flask & Django
+	- js, [[Node.js]] (runtime environment)+ with [[Express.js]] or another framework
+- Why do we need a framework? Why can't we just choose a programming language and create your webserver from scratch?
+	- when you're cooking, you wouldn't make a mayonnaise from scratch, but you'd rather buy one right?
+	- a web framework provides prebuilt components + structures that can be used to build an application without the need for us to write every single line
+- we will be using node coz its a js backend framework

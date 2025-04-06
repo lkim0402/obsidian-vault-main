@@ -1,0 +1,5 @@
+- Configuring credentials (you can always change this)
+	- name: `git config --global user.name "Leejun Kim"`
+		- check by `git config user.name`
+	- email: `git config --global user.email "(email)
+- Download GitKraken GUI
