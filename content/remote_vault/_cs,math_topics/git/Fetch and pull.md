@@ -1,0 +1,2 @@
+- Both are getting changes down from a remote repo
+- If you plan on collaborating, these are critical

@@ -1,0 +1,13 @@
+- `.gitignore`
+- Ignores files you NEVER want to commit!
+	- API keys, credentials, and other application secrets
+	- Log files
+	- Operating system files
+	- dependencies and packages
+	- You put these in a separate file
+- Create `.gitignore` file at the root of a repo
+	- Files: `test.py`
+	- Ignoring folders: `folderName/`
+	- Extensions: `*.log`
+- Creating a useful `.gitignore` file
+	- https://www.toptal.com/developers/gitignore

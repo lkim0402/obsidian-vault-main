@@ -1,0 +1,20 @@
+- To fix an error, you have to understand them!
+- `SyntaxError`
+	- wrong syntax (can't parse), usually just typos
+- `NameError`
+	- variable is not defined (not assigned yet)
+- `TypeError`
+	- an operation or function is applied to the wrong type
+	- argument is missing when calling the function
+	- `len(5) # integer has no length`
+- `IndexError`
+	- you tried to access an element in a list using an invalid index
+- `ValueError`
+	- a built-in operation or function receives an argument that has the right type but an inappropriate value
+	- `int("foo") # ValueError`
+	- `int("5") # 5`
+- `KeyError`
+	- occurs when a dict doesn't have the key
+- `AttributeError`
+	- variable doesn't have an attribute
+	- `"awesome".foo() # AttributeError`

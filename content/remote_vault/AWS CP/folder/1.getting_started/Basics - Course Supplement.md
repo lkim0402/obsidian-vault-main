@@ -1,0 +1,162 @@
+- sources
+	- [Becoming a Cloud Practitioner - part 1 - cloud basics](https://explore.skillbuilder.aws/learn/courses/20511/aws-skills-centers-becoming-a-cloud-practitioner-part-1-cloud-basics/lessons)
+- Part of being a cloud practitioner is knowing which resources are available and where to find the answers you need
+	- [AWS Documentation](https://docs.aws.amazon.com/)
+	- AWS Pricing calculator
+- AWS Well-Architected Framework
+	- best practices and design principles to use as guidelines to build better architecture in the cloud
+	- operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability
+- AWS Cloud Adoption Framework (AWS CAF)
+	- https://aws.amazon.com/cloud-adoption-framework/
+# Terminology and acronyms
+- DNS
+	- This is a service that routes internet traffic to websites by translating human-readable domain names, such as www.example.com, into numeric IP addresses, such as 192.0.2.1.
+- Durability
+	- This term refers to a system's ability to perform its responsibilities over time, even when unexpected events can occur. For example, Amazon S3 is designed for 99.999999999 percent data durability.
+- Edge Location
+	- An edge location is a data center that an AWS service uses to perform service-specific operations. 
+- Edge Location
+	- This is the ability to acquire resources as you need them and to release resources when you no longer need them. In the cloud, you want to do this automatically.
+- Firewall
+	- A firewall is a device that has a network protection application installed to safeguard the network from intentional or unintentional intrusion. 
+	- A firewall sits at the junction point or gateway between the two networks, usually a private network and a public network, such as the internet.
+- Gateway
+	- A gateway is a device or node that connects two different networks by translating communications from one protocol to another.
+- On Premises
+	- This term refers to IT hardware and software applications hosted where the business operates or in a physical data center.
+- Availability zone
+	- An Availability Zone is a distinct location in an AWS Region that's insulated from failures in other Availability Zones. 
+	- It is designed to provide inexpensive, low-latency network connectivity to other Availability Zones in the same Region. 
+
+# Understand AWS Cloud
+- Advantages of cloud computing
+	- Trade fixed expense for variable expense 
+		- pay for the services as u consume
+	- Benefit from massive economies of scale
+		- Because usage from hundreds of thousands of customers is aggregated in the cloud, providers, such as AWS, can achieve higher economies of scale, which translates into lower pay as-you-go prices
+	- Stop guessing about capacity needs
+		- just scale if u have to
+	- Increase speed and agility
+		- easy to access, launch, deploy, allowing devs to focus on innovation
+	- Stop spending money on maintaining servers and hardware
+	- go global in minutes
+		- Conveniently deploy your application in multiple Regions around the world.
+- computing deployment model
+	- the way a company chooses to organize its IT resources
+	- determines how users and applications access files, data, and other applications
+	- 3 commonly accepted
+		- cloud-based
+			- you can migrate existing applications to the cloud, or you can design and build new applications in the cloud
+			- all in the cloud (servers, files, etc managed in cloud for u)
+		- on-premises
+			- i handle everything
+			- resources are deployed in facilities owned by the company using virtualization and resource-management tools
+		- hybrid deployments
+			- reality is that most companies are here, but some companies start cloud-native
+			- files may be mixed.
+- cloud computing models
+	![[Pasted image 20250314153922.png]]
+	- on-premises
+		- business handles everything (all hardware and software)
+	- managed servers
+		- amazon ec2
+		- **You manage the server**: When you launch an EC2 instance, AWS provides the hardware and virtualization, but **you are responsible for everything inside the instance**:
+		    - Managing the operating system (updates, patches, security)
+		    - Installing and configuring software
+		    - Setting up networking and security (firewalls, security groups)
+	- managed services
+		- customer passes more control to AWS by selecting a managed service to deploy their applications
+		- **AWS manages the infrastructure**: You focus on **deploying your application** while AWS handles:
+			- Server provisioning, scaling, and load balancing
+			- OS updates, patching, and monitoring
+		- AWS Elastic Beanstalk -takes care of deploying your core infrastructure so you can concentrate on writing the code for your application
+	- fully managed services
+		- a customer passes the most control to AWS by selecting a fully managed service to deploy -> both infrastructure and application management
+		- With an AWS fully managed service, you can focus on the work to be done while AWS manages the administration and maintenance of the application itself
+		- amazon dynamodb
+
+# Infrastructure of the AWS cloud
+- [[Computer Networking]], [[How does the internet work|How does the internet work]]
+- AWS virtualizes servers where you choose the compute, memory, storage, and throughput you need
+- Fault isolation boundaries
+	- limit the effect of a failure in a workload to a limited number of components
+	- Components outside the boundary are unaffected by the failure.. (kinda like [[Components|React components]])
+	- Examples
+		- AWS Cloud (global boundary)
+			- Services in the cloud are isolated from interruptions from the outside world
+		- Region (regional boundary)
+			- Big physical locations where AWS builds a lots of data centers, connects to the cloud
+				- the data centers are just far enough so that problem is not affected largely
+			- Regions are isolated and independent from other Regions with a few exceptions.
+			- Each Region consists of multiple independent and physically separate Availability Zones in a geographic area. 
+				- All Regions currently have three or more Availability Zones. 
+			- The resources and data that you create in one Region do not exist in any other Region (u have to replicate/copy)
+			- How to select a region
+		- Availability zone (zonal boundary)
+			![[Pasted image 20250314162336.png]]
+			- Purely virtual, NO PHYSICAL (customer will never see)
+				- data center group that supports AZs
+			- An Availability Zone are distinct locations within a Region that are engineered to be isolated from failures in other Availability zones (AZs)
+			- far enough apart to prevent a single failure affecting multiple AZs but close enough to support fast communication
+- Choosing the right region
+	- compliance with data governance and legal req - might dictate where data needs to be geographically stored.
+	- available services within a region
+	- pricing - different services have different costs depending on the Region used
+	- proximity to your customers - the closer, the faster
+- edge location
+	- a site that Amazon CloudFront uses to cache copies of content for more efficient delivery to users at any location
+- AWS Local Zones
+	- They **extend AWS Regions** by **placing compute, storage, and database resources closer** to large cities, industries, and IT hubs.
+	- They are **physically separate from the main AWS Regions** but still connected to them via high-speed networks.
+	- They allow **latency-sensitive applications** (like gaming, media streaming, and real-time analytics) to **run closer to end users**
+
+- Cloud services, regions, and AZs
+	- All AWS services locally reside within a region (like residents)
+	- **Regional Services** → Exist at the **region level** (spanning multiple AZs).
+		- Amazon S3 - each bucked is created in a specific Region
+	- **Zonal Services** → Require you to **select specific Availability Zones (AZs)**.
+		- majority of AWS services
+		- Amazon EC2
+# Connecting to the AWS Cloud
+- AWS Management Console
+	- a user-friendly, web-based interface that you can use to manage your AWS resources
+	- central hub for managing AWS resources
+	- key to successful AWS adoption is to start small, experiment, and gradually scale your usage as your needs grow
+	- After setting up amazon account, you can start exploring the AWS Management Console
+- Accounts
+	- corporate acc - used for general operations
+	- development acc - used for testing & developing new solutions
+	- production acc - used for customer-facing applications and services
+- AWS account root user
+	- complete access to all AWS services and resources in acc
+	- use the root user to create the first AWS Identity and Access Management (IAM) user and assign it permissions to create other users.
+	- Then, continue to create other IAM users, and access those identities for performing regular tasks throughout AWS
+	- Only use the root user when you need to perform a limited number of tasks that are only available to the root user. 
+- IAM
+	- a crucial service in the AWS environment that you can use to securely manage access to your AWS resources
+	- IAM users -> individual identities that can access your AWS environment
+		- partners, employees, even automated systems
+		- can assign specific permissions/actions
+### AWS connection types
+1. Customers accessing your AWS hosted website
+	- Ex. AWS hosted website
+	- website's URL typed -> request travels over the internet and reaches Amazon CloudFront, the AWS content delivery network -> CloudFront will then fetch the website's content from Amazon S3 (where you stored your website files) and deliver it quickly and efficiently to the customer, no matter where they're located.
+2. Application within the AWS Cloud accessing the internet
+	- Ex. a web application hosted on Amazon EC2 that needs to fetch data from a third-party API. 
+	- The application can securely access the internet through the AWS managed network without worrying about configuring firewalls or managing internet-facing resources
+3. AWS service accessing another AWS service
+	- AWS services need to communicate with each other
+	- your web application might need to store data in DynamoDB, an AWS fully managed NoSQL database
+		- The application can efficiently and securely access the DynamoDB service through the AWS network
+
+# Building a website
+- services: hosting a static website 
+	- Amazon S3 - store static files ([[== HTML ==|HTML]], [[== CSS ==|CSS]], images, etc)
+		- highly scalable and durable
+		- u need to turn on static website hosting on your S3 bucket, and uncheck the blocking option
+	- Amazon CloudFront - AWS content delivery network (CDN) service. It helps distribute your website's content to users around the world efficiently
+	- Amazon Route 53 - AWS DNS, which you can use to register and manage your website's domain name.
+- services: hosting a dynamic website
+	- Amazon Lightsail - suitable if you need a convenient, affordable way to get your website online efficiently.
+	- AWS Elastic Beanstalk - focus on application code while AWS handles the operations
+	- AWS EC2 - makes it possible to launch and manage virtual servers called instance. provides you with most control over ur website's infrastructure and its code

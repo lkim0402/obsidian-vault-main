@@ -1,0 +1,27 @@
+- diagram
+	![[Pasted image 20250318232949.png|600]]
+- Features
+	- We also get a hard drive, but we don't care about the actual configs
+	- Think of it like a **shared folder in the cloud** that multiple computers (EC2 instances) can read and write to **simultaneously**.
+	- We get a scalable pre-formatted file system, which uses hard drives under the hood
+	- We can structure the file system as we need (via cmd or code)
+	- Ex. we can create a file system in the [[EC2|EC2 instance]]
+- Not limited to [[EC2|EC2 instances]] unlike [[EBS (Elastic Block Store)]]
+	- can be used with multiple services
+	- X work alone
+- A regional service
+	- focusing on [[AWS Infrastructure (Regions, AZs, Edge locations)#Region|specific region]] & [[Virtual Private Cloud (VPC)|VPC]]
+- Scaling
+	- Built to scale automatically
+- Config
+	- A file system is an [[Permissions & Access Control (IAM)#Types of identities|identity]]
+	- Which type of application workload the file system should be optimized for (read/write, writing big files, throughput, etc)
+	- You don't choose any size/scaling settings (it scales automatically!)
+	- Encryption option - how the files should be encrypted automatically
+	- network access for the file system - which [[Virtual Private Cloud (VPC)|VPC]] it belongs + which [[Virtual Private Cloud (VPC)#Subnets|subnets]] it should be able to reach (useful if ur running instances in specific subnets) + [[Security groups|security groups]]
+	- access policy
+		- which kind of data can be written into this file system
+- Resources
+	- [[File storage#File system|File system]]
+	- [[File storage#EBS vs EFS|EBS vs EFS]]
+	- [[File storage#EBS vs EFS vs S3|EBS vs EFS vs S3]]

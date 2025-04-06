@@ -1,0 +1,9 @@
+- - Race Conditions:
+        - Data Races
+        - Bad Interleavings
+    - Code Synchronization:
+        - Locks, reentrant locks
+        - Java’s Synchronized statement
+        - Lock scheme granularity (coarse vs. fine)
+        - Criticl section size
+        - Deadlock

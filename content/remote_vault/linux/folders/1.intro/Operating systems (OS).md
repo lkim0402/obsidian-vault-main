@@ -1,0 +1,2 @@
+- A system software that manages computer hardware and provides various services for computer programs
+- Windows, Mac

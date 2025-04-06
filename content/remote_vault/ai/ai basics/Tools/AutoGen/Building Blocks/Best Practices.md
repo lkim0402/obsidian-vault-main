@@ -1,0 +1,3 @@
+- Always customize your agent's "system_message" instructions for your specific use case
+	- "This agent is a good assistant who knows a lot about history..."
+- Avoid subclass "UserProxyAgent" and AssistantAgent" as they are already subclasses
