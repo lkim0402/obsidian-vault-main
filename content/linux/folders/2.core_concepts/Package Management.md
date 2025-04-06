@@ -1,0 +1,34 @@
+- Most [[Linux Distributions]] offer a centralized way to install software -> use a **package manager** to install, update, and remove software from a centralized repository
+- Package manager ensures to keep our system up to date
+	- ENOURMOUS benefit of many linux systems
+	- A lot of applications no longer need to include their own updater
+- How does it work?
+	- Our system connects to centralized repositories
+	- They provide a list of available packages (including available versions, and their dependencies)
+	- The package manager fetches this list and ensures smooth installation/upgrades.
+- Slightly different for each distribution
+	- but main idea remains the same
+
+### In Debian-based distros (ex. Ubuntu)
+- We use tool `apt` to keep system up to date & manage our software
+	- related: [[Basic Bash commands#Sudo|sudo]]
+	- `sudo apt update`
+		- refreshes the list of available packages
+		- should run this before doing anything else with apt
+		- should use `sudo` because you're accessing directories owned by root\
+	- `sudo apt upgrade`
+		- runs a small upgrade of our system
+		- small -> upgrades existing packages (and when using `apt`, also allows the install of additional dependencies)
+		- X destroys anything
+		- Other ways to upgrade
+			- `sudo apt full-upgrade / sudo apt dist-upgrade`
+			- large upgrade -> upgrades existing packages, removes/installs additional packages (dependencies)
+			- potentially destroy/remove stuffs
+	- `apt autoremove`
+		- removes packages that are no longer needed
+		- you can run this if there's any errors during an upgrade or full-upgrade
+	- `apt install [package]`
+	- `apt remove [package]`
+	- You can use `apt-get` for update and upgrade (won't install additional dependencies)
+### CentOS
+- dnf

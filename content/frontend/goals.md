@@ -1,0 +1,16 @@
+- Make a personal website blog
+	- blogging 
+		- transfer student into UW
+		- what i learned from my 9 month rest from school
+	- personal projects portfolio
+		- game dev
+			- ethics brocolli
+		- graphics experiments
+			- matter.js experimentation
+			- unity shapes visualizations
+				- learning how math visualizations work!! -> linear algebra
+			- procedural generation
+		- unity + ai personal project simulation (huggingface)
+	- resume
+		- makeability lab research showcase
+		- work at artygenspace 

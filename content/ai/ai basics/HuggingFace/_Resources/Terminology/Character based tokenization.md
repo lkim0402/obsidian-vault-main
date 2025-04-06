@@ -1,0 +1,9 @@
+- Splits text into individual characters (not words).
+	- While there are many words, the number of characters is limited and finite. (An advantage over [[Word-based tokenization]])
+- Out-of-vocabularies less frequent
+- **Libraries**:
+	- **TensorFlow** and **PyTorch**: Can implement custom character-level tokenizers.
+	- **Hugging Face**: Supports character-level tokenization through specific models.
+- Limitation
+	- A character do not hold as much information individually as a word would (at least in the english language)
+	- Their sequences are very long to be processed by the model
