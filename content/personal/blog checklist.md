@@ -18,7 +18,7 @@ Getting the bare bone basics
 		- [x] figure out how to store images - cloudinary
 		- [x] representative image?? - maybe set separately? (+update post schema)
 		- [x] saving draft feature - just made draft category
-		- [ ] tag feature, can add/edit/delete new tags (dropdown
+		- [x] tag feature, can add/edit/delete new tags (dropdown
 		- [ ] view per post
 	- bugs
 		- [x] Inline code bug fix
@@ -33,11 +33,12 @@ Getting the bare bone basics
 	- [ ] how many visitors total to my website (& from which country?)
 	- [ ] Guestbook
 	- [ ] Responsive design
-	- [ ] Menubar side when small screen
-	- [ ] Actually understand tailwind & CSS lmfao
+		- [ ] Menubar side when small screen
+	- [ ] Express, nodejs depth
+	- [ ] automating blog posts to other platforms? potentially
 
-- [ ] link to obsidian (publish it using quartz?)
 # non coding
+- [x] link to obsidian (publish it using quartz)
 - workshop
 	- cards, separated by tags
 		- `Blog/CMS`, `Certs`, `StudySnap`
