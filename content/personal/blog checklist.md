@@ -6,7 +6,7 @@ Getting the bare bone basics
 - [x] deploy database to cloud/server - mongo atlas
 - [x] deploy the entire admin proj frontend to vercel
 
-4/3/25 - 4/6/25
+Features
 - cms & backend
 	- [x] fixed category in admin dashboard - workshop/journal
 	- editor
@@ -14,26 +14,28 @@ Getting the bare bone basics
 		- [x] CodeBlockLowlight - code syntax highlight
 		- [x] refractor editor for postdetail & createpost
 		- [x] fix scroll
+		- [ ] alert for deleting posts/tags (just in case)
 	- post
 		- [x] figure out how to store images - cloudinary
 		- [x] representative image?? - maybe set separately? (+update post schema)
 		- [x] saving draft feature - just made draft category
 		- [x] tag feature, can add/edit/delete new tags (dropdown
 		- [ ] view per post
+		- [ ] click on image -> expand??
 	- bugs
 		- [x] Inline code bug fix
 		- [x] the "check your saved passwords" error - changed pw (because the current pw has been in a data breach somewhere)
-		- [ ] when you refresh page is 404
 - blog frontend
 	- [x] make the posts show up to blog
-	- [ ] blog card design
-- advanced stuff
+	- [x] blog card design
+	- [x] filter by tags in each section (workshop/journal)
+- other stuffs
 	- [ ] SEO
-	- [ ] how many ppl clicked/viewed the post
-	- [ ] how many visitors total to my website (& from which country?)
+	- [ ] how many visitors total to my website (& from which country?) google analytics?
 	- [ ] Guestbook
-	- [ ] Responsive design
-		- [ ] Menubar side when small screen
+	- [x] Responsive design
+		- [x] Menubar side when small screen
+	- [x] Make the workshop blog posts load when the entire website is first loaded (ping it in header component)
 	- [ ] Express, nodejs depth
 	- [ ] automating blog posts to other platforms? potentially
 
@@ -43,9 +45,12 @@ Getting the bare bone basics
 	- cards, separated by tags
 		- `Blog/CMS`, `Certs`, `StudySnap`
 	- [x] passing cloud practitioner post
-	- [ ] passing solutions architect post
 	- [ ] how i made my blog post
+		- [x] part 1 - planning, db, architecture + backend
+		- [ ] part 2 - backend + cms
 	- [ ] study snap devlog
+	- [ ] passing solutions architect post
+	- [ ] post about python automation
 - journal
 	- will also contain retrospectives (if this is a lot, will refractor later)
 	- cards, separated by tags
