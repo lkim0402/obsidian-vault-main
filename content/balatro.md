@@ -2,12 +2,11 @@
 - IDK,  i absolutely love this game. I love how simple the game mechanics are, and how addicting is, and how insane it can be. I usually don't even play games of these genre (i usually love indie games like hk or story based games) but i just love balatro man..
 - websites and links
 	- [official dev's website!](https://localthunk.com/)
-- 
 # random thoughts
 - active community
 	- i found out that making custom jokers (+ abilities & design) could get pretty creative, and many ppl alr were seeming to do that. Looks super fun lol. The [subreddit](https://www.reddit.com/r/balatro/) is also very active, and there is a yt channel named [balatro university](https://www.youtube.com/@drspectred) haha
 - the game design - very interesting game design choice.
 	- [balatro's 'cursed' game design problem, gmt (yt)](https://youtu.be/zk3S3o1qOHo?si=ZXa8MRp8BZ3lmabM) 
 		- basically the dev intended the game to not show to the final score, hoping players will cross their fingers to pass the score when the cards are doing their numbers. However as with any other games, there will always be hyper analysts who *calculates* the scores to maximize the results, which was not the game dev's intent. 
-		- As for me, i think the very thing that doesn't allow u to see your score is what makes balatro so thrilling (and addicting)....Personally, I think not being able to see the score's "preview" is not really a "design flaw", it's a pretty interesting game design choice.  
+		- As for me, i think the very thing that doesn't allow u to see your score is what makes balatro so thrilling (and addicting)....So I think not being able to see the score's "preview" is not really a "design flaw", it's a pretty interesting game design choice.  
 - it's not a poker game. it's more like a "poker themed" game.
