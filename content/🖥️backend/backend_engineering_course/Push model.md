@@ -1,0 +1,23 @@
+- Use this if you want the response as fast as possible, immediately on the client
+- [[Request and response model]] is not always ideal
+	- real time notification, when client wants real time notification from backend
+		- user just logged in/message is just received
+		- push model is better -> it's "forcing", which can be good or bad
+# Push
+![[push model.png|450]]
+- Steps
+	- Client connects to server
+	- Server sends data to client
+		- Client doesn't have to request anything, the only thing it needs is the connection to server
+- The protocol must be bidirectional
+- Used by `RabbitMQ`
+	- Message sent to the queue, and it pushes to the clients that are connected to it (consumers)
+- Pros
+	- It's real time. It's called push because the result is pushed immediately as the moment the event is generated 
+	- You're literally writing to the client socket
+- Cons
+	- client must be online
+	- client might not be able to handle (that's why `kafka` handles this differently than `rabbitmq`, it uses [[long polling]]). 
+		- Server doesn't have the knowledge whether the client can handle it or not
+	- Requires a bidirectional protocol
+	- Polling is preferred for light clients

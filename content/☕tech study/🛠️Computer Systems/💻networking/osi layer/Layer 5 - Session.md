@@ -1,0 +1,6 @@
+- Communication management between devices (start, stop, restart)
+	- before we can send info, we may need to create a session
+	- It’s managing that whole "talking session," not the data _inside_ it
+- Examples of things at Layer 5
+	- Control protocols - manage sessions (like setting up a remote desktop connection)
+	- Tunneling protocols protocols - **PPTP** or **L2TP** (used for VPNs — Virtual Private Networks)

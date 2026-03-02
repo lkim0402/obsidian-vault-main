@@ -1,0 +1,24 @@
+- Use this where [[Request and response model]] is not ideal
+	- Ex) Uploading a YT video
+# Short polling
+![[shortpolling.png]]
+- steps
+	- client sends a request
+	- server responds immediately with a handle (usually a unique identifier that corresponds to the request)
+		- the server do whatever - queue, persist through disk, put it in memory & execute etc. The request is not executd immediately
+	- server continues to process the request
+	- client uses that handle to check for status
+		- "is it ready?"
+	- Multiple "short" request/response as polls
+- so poll itself is a [[Request and response model|request/response model]], but the entire system is [[Synchronous vs Asynchronous#Asynchronous I/O|asynchronous]].
+- The response can be done anytime, *but it's sent back to client only when client polls*
+- Pros
+	- Simple
+	- good for long running requests
+	- client can disconnect safely
+- Cons
+	- Too chatty... imagine you scaled up & u have 1000s of ppl. most of them will be useless where the backend responds with `false` lol
+	- network bandwidth
+		- this is precious in the backend.. since if you put ur architecture in cloud that's how you get billed
+	- basically wasted backend resources
+		- the backend checking if the request is finished uses finite resources, and it could have been used for doing actual requests

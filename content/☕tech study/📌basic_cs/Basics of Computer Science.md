@@ -1,0 +1,23 @@
+- Basically there are just some basic/fundamental knowledge that every CS student should just *know*, as in if you were asked about it anytime/anywhere you could just blurt out the answer.. at least that's the goal of what I'm hoping to achieve 🙏
+# Basics
+- [[Basic terminology]]
+- [[Code compilation process]]
+	- [[Code Compilation Process in C]]
+	- [[JVM, JRE, JDK & the Compilation Process|Code Compilation Process in Java]]
+- Binary numbers
+	- A number composed of just `0`s and `1`s (base-2 number)
+	- All information in a computer is stored as binary numbers
+	- *bit* - single binary digit
+	- *byte* - 8 bits
+		- kilobytes (KB) = $2^{10} = 1024 \approx 1000$
+		- megabytes (MB) = $2^{20} = 1024 \text{ KB}$ 
+		- gigabytes (GB) = $2^{30} = 1024 \text{ MB}$ 
+		- terabyte (TB) = $2^{40} = 1024 \text{ GB}$ 
+- [[Types of program errors]]
+- [[Library VS Framework]]
+- [[Procedural VS OOP]]
+# Language Design Approaches
+- [[Top-down VS Bottom-up (OOP)]]
+- [[Dynamic typing VS Static Typing]]
+- [[High level VS Low level]]
+- [[Compiled VS Interpreted]] 

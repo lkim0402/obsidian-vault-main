@@ -1,0 +1,12 @@
+- Webpages
+	- So far, websites that only have a frontend are essentially webpages
+	- they are bits of HTML that gets requested from the browser to our server, and the server returns that html file which gets rendered
+- Web applications
+	- user should be able to do something beyond just allowing users to view webpages
+	- ex. logging in
+		- User enters web app and logs in
+		- this info is passed to a server in a request 
+		- server then is able to find the application that knows how to handle the login (ex. `login.js`)
+		- in this file there is some logic that knows how to log a user in... we can search a db, look for a particular email and get hold of the password for that email and compare
+		- if the data match, we send back a response, in the form of a homepage
+		- if data doesnt match, we give back an error

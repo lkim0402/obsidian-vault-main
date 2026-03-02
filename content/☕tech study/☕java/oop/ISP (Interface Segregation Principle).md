@@ -1,0 +1,2 @@
+	- 자바내부코드, spring 안들 보면 됨
+	- in memory 저장 -> repository

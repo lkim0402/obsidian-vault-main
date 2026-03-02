@@ -1,0 +1,59 @@
+- seattle freeze
+	- It's a social phenomenon describing the difficulty of making new friends in the city, especially for newcomers lol. Apparently it's something where people are nice because it's what's expected of them, but no authenticity (like autopilot).
+	- https://www.reddit.com/r/udub/comments/186jo92/what_exactly_is_the_seattle_freeze/
+	- https://www.reddit.com/r/Seattle/comments/1kc5ed8/the_seattle_freeze_is_real_just_not_what_youre/
+- stuffs
+	- [reddit thread on seattle traditions](https://www.reddit.com/r/Seattle/comments/pw4c2a/new_to_seattle_what_are_some_seattle_traditions/)
+	- [reddit comment on seattle events](https://www.reddit.com/r/Seattle/comments/1ndor56/comment/nditc1r/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+	- links
+		- https://www.events12.com/seattle/
+		- https://seattlesoon.com/
+	- nature in seattle
+		- environmentalism + emphasis on recycling, compost programs, caring about the waterways, conservation awareness, etc
+		- hiking in the summer or kayaking -> Maybe make a trip out to touristy towns like Leavenworth
+		- Skiing or other snow activities in the winter.
+	- gaming culture
+		- especially tabletop.. -> board games, card games, role playing games, party games, etc
+		- stores and venues -> Mox Boarding House, Blue Highway, Zulu’s (in Bothell)
+		- [reddit comment](https://www.reddit.com/r/Seattle/comments/1awjbuw/comment/krho4d0/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+	- festivals
+		- Seafair, Bite of Seattle, Bumbershoot, even PAX and Chocolate Fest were my favorite.
+- transportation
+	- light rail -> regionl transit system
+- companies
+	- amazon, boeing, costco, microsoft, starbucks, REI, nordstrom, alaska airlines
+- to go
+	- (all the tech companies offices btw)
+	- the space needle
+	- amazon spheres
+	- seattle central library
+	- boeing factory (largest building in the world??)
+	- gasworks park?
+	- olympic sculpture park
+	- Sucia island
+- sea hawks and mariners
+- coffee in seattle
+- weed
+- tech hubs
+	- Ada's on Capitol Hill
+	- Victrola Coffee Roasters
+- meetups
+	- SeaJUG (Seattle Java User Group)
+	- AWS User Group Seattle (AWSUGSEA)
+
+# uw
+- events?
+	- Research Colloquia (Ongoing): The Allen School hosts weekly talks in the Gates Center (CSE2). For example, Kevin Weil from OpenAI is scheduled for May 7, 2026.
+	- ElectricSEA Art+Tech Hackathon (March 26–28, 2026): A hands-on "weekend of learning" in Seattle that focuses on the intersection of AI, Art, and IoT. Great for "out of the box" projects.
+	- Kent Hack Enough (March 28–29, 2026): A student-focused hackathon held just south of Seattle in Kent.
+- UW cherry blossom season
+- To go
+	- The Union Bay Natural Area
+		- https://botanicgardens.uw.edu/center-for-urban-horticulture/visit/union-bay-natural-area/
+	- UW Tree tour
+		- https://sites.google.com/uw.edu/schoolofenvironmentalandforest/#h.qkck27wwz601
+	- kodo event
+		- https://meanycenter.org/tickets/2023-01/production/kodo
+- sources
+	- [things to do before you graduate](https://www.reddit.com/r/udub/comments/slkpb2/im_graduating_this_year_what_are_some_bucket_list/)
+	- 

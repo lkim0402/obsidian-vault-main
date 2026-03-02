@@ -1,0 +1,40 @@
+> For anki
+
+- config file
+	- A file (usually JSON or YAML) that contains all the settings and parameters needed to run a model, including architecture details, training settings, and other hyperparameters. Think of it as the "recipe" for how to set up and run the model.
+- Model checkpoint
+	- A saved snapshot of a model's weights and settings at a particular point during training. Used to resume training or share trained models.
+- Model Card
+	- A documentation file (like README.md) that describes a model's capabilities, limitations, intended uses, and technical details. Like a user manual for the model.
+- Inference
+	- The process of using a trained model to make predictions on unseen data
+- `.safetensors` file
+	- A file format specifically designed for storing AI model weights (parameters). It's faster and more secure than traditional PyTorch files (`.pth`), with better memory efficiency and protection against malicious files.
+- Tensor
+	- Tensors are basically containers for numbers that the AI model uses
+	- Tensor Hierarchy
+		- 1D tensor (Vector): `[1,2,3,4]`
+		- 2D tensor (Matrix): `[[1,2,3],[4,5,6]]`
+		- 3D tensor (Stack of grids): Example - Multiple images
+		- 4D+ tensor (Even more dimensions): Example - video batches
+	- Different tensor types
+		- `FP16/BF16`: Normal precision, standard choice
+		- `INT8/INT4`: Lower precision but uses less VRAM
+	- If parameters are like music notes in a song, tensors are like the sheet music that organizes these notes, and tensor types are like different ways of writing music notation (some more detailed, some more compact).
+- Parameter/weights
+	- The learned "knowledge" it gained during training. Stored in files like `.safetensors` or `.pth`.
+	- Ex) `Llama-3.1-405B-Instruct` has 405B parameters/weights
+	- Generally, more parameters = more capacity to learn complex patterns
+	- But also: more parameters = needs more computer power & memory to run
+	- Size comparison
+		- Small models: 1-3B parameters
+		- Medium models: 7-13B parameters
+		- Large models: 30B-70B parameters
+		- Very large models: 100B+ parameters
+- VRAM
+	- Video RAM - the memory on your graphics card (GPU) used for running AI models. More VRAM lets you run larger models or process bigger batches of data at once.
+- "token"
+	- The smallest unit of text that a model processes. Can be words, parts of words, or characters. For example, "butterflies" might be split into tokens like `["butter", "flies"]` or `["but", "ter", "flies"]`.
+- context window
+	- The maximum amount of text (measured in tokens) that a model can process at once. Like a sliding window of attention - larger windows mean the model can "see" and work with more text at once.
+	- (여기까지 ankify)

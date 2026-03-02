@@ -1,0 +1,17 @@
+- cybersecurity with AI
+	- 단순한 IT, 소프트웨어가 아니라 AI로 인간 보안문제 쪽을 연구해보는 것도 나쁘지 않다
+	- 앞으로 AI에 의해 많은 코드가 만들어질 것이고 전혀 생각치 못했던 부분에서 보안이 필요할 수 있다
+- AI automation
+	- MCP 사용법 알아보기
+- Google I/O 2025
+	- sources
+		- [some person's notes in google doc](https://docs.google.com/document/d/1pORcy3ma3iEE9VdMbmWiFa3m6Equ1_AQwcKseYFfHK0/edit?tab=t.0)
+	- Project Mariner
+	- Personal AI Assistant that analyzes EVERYTHING
+	- Project Astra
+		- Live personal assistant (insane)
+	- Veo3
+- removing the useless compliments + praise in LLMs
+	- https://freedium.cfd/https://medium.com/@jordan_gibbs/chatgpt-is-poisoning-your-brain-b66c16ddb7ae
+	- https://www.reddit.com/r/ChatGPT/comments/1k8vomo/heres_how_to_get_chatgpt_to_stop_being_an_overly/
+	- 

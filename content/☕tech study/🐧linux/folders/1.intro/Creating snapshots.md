@@ -1,0 +1,3 @@
+- Allows you to go back in time
+- You can just destroy your VM lol
+- `Machine > Take Snapshot`

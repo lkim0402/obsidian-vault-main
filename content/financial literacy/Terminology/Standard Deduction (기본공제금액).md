@@ -1,0 +1,4 @@
+- A dollar amount, set annually by the IRS, that most taxpayers can deduct from their taxable income to reduce their tax bill
+- 세금 계산 시 과세 대상 소득에서 일정 금액을 공제해주는 제도. 세금 부담을 줄이기 위한 목적으로 사용됨
+- The amount of your standard deduction is based on your filing status, age, and other criteria.
+- The standard deduction in 2024 is $14,600 for individuals, $29,200 for joint filers, and $21,900 for heads of households in the US.

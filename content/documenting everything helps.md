@@ -1,0 +1,27 @@
+2/12/26
+- I've felt this need to document everything going on with my life. Not because i think it's good but it actually is good lol
+	- i feel like my memory actually peaked in high school and it's just been on the decline since then...rip. i feel like this was also partly due to COVID19... i have a pretty big gut feeling. nothing really felt the same after covid,  i've struggled with brain fog immensely since then.. (i also cant believe COVID was 7 years ago??)
+- During my stay at Korea, I've had the time to see the characteristics of the dev community here, which was quite different from US. 
+	- Unlike America where there is no particular emphasis on documentation, here in Korea every developer is expected to document their projects/events/thoughts, probably led to blogging platforms being popularized (velog, tistory, naver blog, etc.) 
+	- This is also why I think that... in the US a resume is expected to be only 1 page, but in korea, a resume can be up to 2-4 pages even for an intern/new grad. In korea, people also put a self-introductory summary essay (1-2 paragraphs) on the top (!), which is something u should never do if ur applying in the US lol
+	- This characteristic? tradition? actually influenced me in a positive way because I've noticed that even for my personal projects/experiences I couldn't remember many of the details of what happened.. so i realized i need to adapt this because it would really benefit me in the long run (my memory sucks)
+- Some things in particular
+	- Writing generally helps me to **remember things**, both handwritten and typed (although more handwritten). 
+		- When i consciously write down something to form a thought, when i try to remember something about that specific topic i wrote i can actually remember what i wrote. Now this should be fairly obvious, and it is something that literally everyone says, but somehow i'm only seeing the effects now? 
+		- The important thing is that the writing should be formed by *me*, as in i should be the one consciously selecting the words to write, and not just copy pasting some article or LLM generated text (which just gives me prettier notes). I need to do the annoying act of actually parsing the info and writing it *in my own words*.
+			- `topic -> parsing (with brain) -> writing abt topic`
+		- ALSO this helps in remembering my life, like actually fr
+			- documenting my experiences with friends/family, what i am thinking about, things that happened around me, games i played, places i went, food reviews, etc. writing helps to remember life better. 
+	- On top of remembering things, writing has helped me to **understand things** better too. 
+		- Again, this should be very obvious... but for a long time i was stuck in this cycle where if i had summarized notes for a particular topic i thought i actually understood it... But when someone asks me about it, i would sometimes forget a lot of the important portions/details. Which meant I actually didn't really understand it.
+	- Also writing not only helps in academic studies at UW or taking online courses, but it generally helps in, like, all areas of life. 
+		- *fleshing out your thoughts and opinions in general, making u more opinionated*
+			- media analysis (did u agree/disagree? what is the message? what is good/bad?)
+			- seeing news & understanding what tf is happening (piecing together the information on the internet -> seeing the picture/coming to a conclusion)
+			- solving different problems (getting info/context, making steps for conclusion)
+		- *structuring messy, tangled thoughts into coherent structure*
+			- for example if i am overwhelmed with tons of things to do, i can just write down step by step and sort things out. i don't know the science behind this but i know it HELPS
+	- related note: [[learning + understanding things]]
+
+- some other resources/inspirations
+	- [Mini essays - the ultimate learning tool (yt vid)](https://youtu.be/N4YjXJVzoZY?si=6MX9fzAdp8FmuhOc)

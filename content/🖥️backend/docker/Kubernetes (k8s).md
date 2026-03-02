@@ -1,0 +1,7 @@
+- k8s (shortened because there are 8 letters between k and s), made by Google
+- **Container orchestration** is the core job
+	- Used for orchestrating multiple containers
+	- Automates the management of containerized applications
+	- [[ECS,EKS]] -> ECS is AWS's own proprietary container orchestration service
+- Not just for Docker -> It's is a **container-agnostic** tool, meaning it can manage any container that follows the OCI (Open Container Initiative) standard
+	- While it is most _commonly_ used with Docker, it fundamentally extends the capabilities of containerization itself

@@ -1,0 +1,9 @@
+- Virtual (or physical) rubber duck
+	- Talk to it lol
+	- Talk to an inanimate object about your confusion, and you might be actually solve it yourself
+- Print
+	- `printf`
+- OK, use an actual debugger
+	- This will pay off more and more as you do more complicated projects!
+	- VSCode built in debugger
+		- `debug50` just automates the process of starting it

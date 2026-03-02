@@ -1,0 +1,64 @@
+- face shape
+	- oval (high change)
+- body shape
+	- wave (high change)
+- hair
+	- whispy bangs
+- 퍼스널 컬러
+	- 테스트 해보기 시발..
+- makeup
+	- do your make-up like a celebrity look-alike
+	- 장원영 메이크업
+	- soft natural
+
+## "finding your style"
+- source
+	- https://youtu.be/9xyNfhEfJKs?si=yJZHQIl0WHvLAW-j
+- what are the 3 main occasions i get dressed for?
+	- university
+	- internship/research lab - semi formal
+	- hanging out with friends / dates
+- what are my goals in those 3 occasions?
+	- LOOK COMFORTABLE & CONFIDENT
+	- look "cool" LMAOOO
+- pick 3-5 bottoms that fulfill that in this season
+	- 정장 슬랙스 (1벌)
+	- high wait (black/blue) jeans (1벌)
+	- will buy
+		- 카키 카고 바지
+		- 갈색 코튼 바지
+		- 롱치마 (brown/white) - flowy
+		- 청치마 (시도해보고싶음)
+- pick 3-5 tops that fulfill that in this season
+	- 그래픽은 없고, 패턴 선호
+	- (formal) - 없음 ㅅㅂ
+	- 달라붙는 검은 긴팔
+	- will buy
+		- 나시
+		- knitted 나시
+	- sweater
+		- balloon + 나시
+		- mohair vneck + 나시 <<
+	- 가디건
+- pick 3-5 accessories that fulfill that in this season
+	- 귀걸이............. 사야함
+			- THERE ARE SO MANY BEAUTIFUL EARRINGS
+	- 목걸이 
+		- (에이블리에서 산거)
+		- vintage
+	- vintage/beads bracelets
+	- rings
+	- layering funky pieces (없음!!!!)
+		- pattern socks, long socks, layering pieces, belt, etc
+- pick 3-5 shoes that fulfill that in this season
+	- 없음....................................
+	- 1 sneaker, 1 boots, 1 flat loafer..
+- pick 3-5 bags that fulfill that in this season
+	- 아 ㅅㅂ...... 딱히 없음..ㅠㅠ
+		![[Pasted image 20250323230450.png]]
+- add what you don’t have to your wishlist
+	- what do u have and what do u dont have
+	- wait 1 month before buying anything
+	- when buying, try to style with like 5 more things u already own!!!!!
+- write 10 outfit formulas using the 15 items you chose
+	- create a folder on your phone / pinterest board where you save all items you like

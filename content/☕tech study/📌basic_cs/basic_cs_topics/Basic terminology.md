@@ -1,0 +1,15 @@
+- **Algorithm**
+	- A step-by-step description of how to accomplish a task
+- **Algorithmic thinking**
+	- A quote: "It has often been said that a person does not really understand something until after teaching it to someone else. Actually a person does not really understand something until after teaching it to a computer, i.e., expressing it as an algorithm."
+- **Computer**
+	- A machine that manipulates data and executes lists of instructions known as programs.
+	- A computer can run many tasks (games, stream movies, etc) depending on what program it is running at the given moment.
+- **Program**
+	- A list of instructions to be carried out by a computer.
+	- When the user selects a program for the OS to run, the instructions for that program are loaded into the computer's memory from the hard disk, the OS allocates memory for that program to use, and the instructions to run the program are fed from memory to the CPU and executed sequentially.
+- **Software**
+	- Computer programs are collectively called software.
+- **Program execution**
+	- The act of carrying out the instructions contained in a program
+	- Also called *running*

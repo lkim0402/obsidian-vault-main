@@ -1,0 +1,64 @@
+- Trying to remember everything we read should not be the goal in the first place
+	- The reason you want to read is because you want to *apply and problem solve* in the first place
+	- Remember all the knowledge we *need to remember* (and not all knowledge)
+		- Not all information is equal
+	- What stays in your brain >> What goes in your brain
+- Reading
+	- 2 Stages
+		- Consumption
+			- Identify which category the info is in
+		- Digestion
+			- Use the targeted process per category
+	- Consumption & Digestion
+		- It's a balance - everything you consume must be digested
+		- You have to do both for learning to actually occur
+- Categories
+	- Each category has processes to help you remember, and each information belongs to each category
+	- If you categorize it wrong, you fall into passive reading and higher chance of not remembering correctly
+- Don't waste time just re-reading notes and trying to blindly memorize information
+# PACER
+- PAC forms the bulk of your knowledge
+- **Procedural**
+	- Any information that tells you how something should be executed
+	- Ex) Coding, languages
+	- **Key: Practice**
+		- Apply the info in real life AS EARLY AS POSSIBLE
+		- As soon as you read the info, practice it
+	- But what if we don't have time to practice it now?
+		- Move on to smth else
+		- Stop reading until you have time to practice
+	- But don't waste your time to try to memorize it 
+- **Analogous**
+	- Info that is related to smth you alr have prior knowledge about
+	- Analogies can form with ANY prior knowledge, including knowledge within a topic itself
+	- **Key: Critique**
+		- Examine how good that analogy is
+			- How are they related / different?
+			- In what situation does this analogy not make sense anymore?
+			- Is there a better analogy?
+- **Conceptual**
+	- Info of the "what" - Facts, explanations, relationships, theory/principles, application
+	- Many cases we need: procedural + conceptual = problem solving
+	- **Key: Mapping**
+		- Mind mapping, should be non-linear
+		- We want to recreate that network of knowledge that the expert had
+			- Beginners only understand each concepts separately & doesn't know how to connect them together
+		- Forces us to think about each fact/concept & how they connect
+- **Evidence**
+	- Info that helps conceptual information to be more concrete (like proofs)
+	- **Key: Store & rehearse**
+		- Store
+			- Collect that information and store it somewhere (mind map, 2nd brain system like obsidian, flashcards, google docs, etc)
+			- *Should happen as soon as you identify it*
+		- Rehearse
+			- How to use/apply the info?
+			- Problem solving, teaching, answering, explaining, writing essays
+			- *Can happen it later*
+	- Similar to Reference
+- **Reference**
+	- The nitty gritty specific into that don't really change your conceptual understanding (not very important anyway)
+	- We might need to memorize this later
+	- **Key: Store & rehearse**
+		- Store
+		- Rehearse
+			- Direct fact recall, just memorize it with flashcards (maybe 30 mins everyday)

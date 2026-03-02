@@ -1,0 +1,4 @@
+- It's NOT a target for slice testing because it's already covered by unit tests
+	- the service layer is where your core business logic lives
+	- use [[Unit Test|unit tests]] for the service layer < they're much more effective & use tools like [[JUnit 5]] and [[Mockito]]
+- Add `@Transactional` on top of the testing class (ex. `UserServiceTest.java`) -> When you test a service method that uses a repository to change data in the database

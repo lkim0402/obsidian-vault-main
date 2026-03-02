@@ -1,0 +1,2 @@
+- Decide key metrics (accuracy, latency, throughput)
+- Estimate resources and timeline

@@ -1,0 +1,6 @@
+- hair
+	- scalp essence
+	- x too hot/cold water shower -> medium temp water
+	- dry ur hair completely (the scalp)
+	- dry hair with volume, and put rolls
+	- 

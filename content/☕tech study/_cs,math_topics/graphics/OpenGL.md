@@ -1,0 +1,19 @@
+- Not the most powerful API but the easiest to learn
+- Learn C++, LEARN HOW TO DEBUG
+- sources
+	- How you can start learning OpenGL - https://youtu.be/HPBXr6Zdm4w?si=ZCnLIb1r_4wjgCuU
+
+- Hard stuff in learning OpenGL
+	- setting up opengl and learning basics 
+		- learnopengl.com 
+			- the debugging section is a MUST
+		- https://docs.gl/
+	- Resources
+		- The Cherno
+		- Jamie King
+- Understand 3D math
+	- linear alg
+	- 3blue1brown
+- Advanced things
+	- Brian Will
+	- presentations from SIGGRAPH

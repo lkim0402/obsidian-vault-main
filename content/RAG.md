@@ -1,0 +1,2 @@
+- just read this
+	- https://docs.langchain.com/oss/python/langchain/rag

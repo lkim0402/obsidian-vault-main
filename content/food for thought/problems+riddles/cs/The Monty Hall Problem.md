@@ -1,0 +1,16 @@
+- Problem: 
+	- There are 3 doors: behind one is a car, and behind the other two are goats. 
+	- The Twist: You pick a door, then the host (who knows what's behind the doors) opens one of the other doors to reveal a goat and asks if you want to switch.
+	- Which has a higher chance of getting the car: switching or not switching?
+
+- Scenarios & the possibilities of getting the car
+	- $P(\text{Total Win}) = P(\text{Initial Pick}) \times P(\text{Win given that pick})$
+	- Staying
+		- Pick car & staying (win) -> $\frac{1}{3} * 1 = \frac{1}{3}$
+		- Pick goat & staying (lose) -> $\frac{2}{3} * 0 = 0$
+		- Total = $\frac{1}{3} + 0 = \frac{1}{3}$
+	- Switching
+		- Pick car & switching (lose) -> $\frac{1}{3} * 0 = 0$
+		- Pick goat & switching (win) -> $\frac{2}{3} * 1 = \frac{2}{3}$
+		- Total = $0 + \frac{2}{3} = \frac{2}{3}$
+	- So since $\frac{2}{3} > \frac{1}{3}$, switching is better!

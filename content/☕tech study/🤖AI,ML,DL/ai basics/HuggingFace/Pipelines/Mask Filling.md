@@ -1,0 +1,17 @@
+```python
+from transformers import pipeline
+
+unmasker = pipeline("fill-mask")
+unmasker("This course will teach you all about <mask> models.", top_k=2)
+```
+```
+[{'sequence': 'This course will teach you all about mathematical models.',
+  'score': 0.19619831442832947,
+  'token': 30412,
+  'token_str': ' mathematical'},
+ {'sequence': 'This course will teach you all about computational models.',
+  'score': 0.04052725434303284,
+  'token': 38163,
+  'token_str': ' computational'}]
+```
+- mask word depends on model

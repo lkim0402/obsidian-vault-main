@@ -1,0 +1,3 @@
+- super cheap (under 1$)
+- *Easy to lose most or even all of your investment of your stocks*
+- Just don't do it lol

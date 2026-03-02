@@ -1,0 +1,3 @@
+- [[dashboard - favorite]]
+- [[dashboard - chart]]
+- [[dashboard - ranking]]

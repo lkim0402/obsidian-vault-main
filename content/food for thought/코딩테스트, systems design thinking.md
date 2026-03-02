@@ -1,0 +1,21 @@
+- stuff to get out from ur cs degree
+	- coding is just the medium for these 
+	- **systems thinking** - work to develop this way of thinking as early as possible
+		- dividing large problems into components and interactions
+		- sounds simple but rare
+		- 3 steps
+			- identify the problem and requirements
+			- identify what tools you have for your disposal
+			- identify tradeoffs
+		- separates junior from seniors
+	- **abstraction and modeling**
+		- OOP
+		- take a real world thing and model only the attributes/behaviors that matters for your use case
+		- pretty much every business problem is this
+		- process optimization - taking a real world process, creating a model of it, removing unnecessary steps
+	- **tradeoffs**
+		- there are costs to everything
+		- "how to make difficult decisions"
+	- **iterative problem solving (debugging)**
+		- test the hypothesis, measure the results, debug
+- 

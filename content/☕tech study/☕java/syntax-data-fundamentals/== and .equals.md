@@ -1,0 +1,5 @@
+- == 
+	- checks if two variables point to the same object in memory
+	- safe with enums because enums are constants
+- `.equals`
+	- Compares the **contents**, not memory location

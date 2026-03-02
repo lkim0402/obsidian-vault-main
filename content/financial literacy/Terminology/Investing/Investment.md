@@ -1,0 +1,12 @@
+- An [[Asset]] or item acquired with the goal of generating income appreciation
+- Warren Buffet: Investing is an activity in which consumption today is forgone in an attempt to allow greater consumption at a later date
+- The important things
+	- You can’t invest without being a disciplined saver.
+    - **Instead of saving what you don’t spend, spend what you don’t save.**
+    - You need to learn to pay yourself first! → Saving 10% of your total income is a good goal! The less you have the less you will spend.
+- What you should do first:
+	- Set up automatic transfers into savings on the day you get your paycheck.
+	- If you pay yourself first, you won’t even notice there’s less money to spend
+- You have to 'Hedge'
+	- 자기 자산을 인플레이션(inflation)으로부터 보호하기
+	- 물가 인상률이 5%라면 그걸 방어하기 위해 펀드/주식을 해서 5%수익 내기

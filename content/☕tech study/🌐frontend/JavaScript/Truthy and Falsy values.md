@@ -1,0 +1,11 @@
+- Falsy values
+	- `false`
+	- `0`
+	- `""`
+	- `null`
+		- how you as a developer signalize emptiness
+	- `undefined`
+		- how JS signalize emptiness
+	- `NaN`
+- Check if something is truthy or falsy
+	- `Boolean()`

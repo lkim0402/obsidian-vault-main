@@ -1,0 +1,3 @@
+- When possible, a commit should encompass a single feature, change, or fix.
+- Try keep each commit focused on a single thing.
+	- This makes it much easier to undo or rollback changes later on

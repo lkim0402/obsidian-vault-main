@@ -1,0 +1,2 @@
+- Not issued or controlled by any government or financial institution. 
+- Run by peer-to-peer networks of computers running free, open-source software

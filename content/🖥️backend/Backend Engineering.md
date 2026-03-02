@@ -1,0 +1,58 @@
+- [[🗃️Database]]
+- [[backend engineering course]]
+# Foundations 
+- [[Backend & Main Components Explained]]
+- [[Web Pages VS Web Applications]]
+- [[HTTP Fundamentals]]
+- [[URLs and Endpoints]]
+- [[JSON]]
+# API & Communication Protocols
+- **REST & General API Design**
+    - [[APIs]]
+    - [[REST API]]
+    - [[Basic guidelines for building APIs]] 
+    - [[Formatting API Requests]]
+    - [[API performance metrics]] 
+    - [[API documentation (Spring REST DOCS, Swagger UI)]]
+- **Real-Time & Event-Driven**
+    - [[Real time communication]] 
+    - [[Websocket]]
+    - [[Server-Sent Events (SSE)]] 
+    - [[Webhook]]
+- **Modern Alternatives (RPC & Query)**
+    - [[GraphQL]]
+    - [[gRPC]]
+- **Consuming APIs** (Client side / Testing)
+    - [[Rest Client]]
+    - [[Server-side API Requests + Axios]]
+- **Documentation**
+	- [[API documentation (Spring REST DOCS, Swagger UI)]]
+# Architecture Patterns
+- **Monolithic Structures**
+    - [[⭐Layered Architecture|Layered Architecture (Spring)]]
+    - Clean Architecture
+    - Hexagonal Architecture
+- **Distributed Structures**
+    - [[Microservice Architecture (MSA)]]
+    - [[Serverless Architectures & APIs]]
+		- [[Supabase]], [[Firebase]]
+# Backend Security
+- [[Authentication & Authorization]]
+- [[API Authentication]]
+- **Auth Strategies**
+    - [[Login Process with JWT]] (Includes Token)
+    - [[Session]] + [[Cookies]]
+    - [[OAuth 2.0 and OpenID Connect]]
+# Tools & Frameworks (the tech stack)
+- **Node.js Ecosystem**
+	- [[Node.js]]
+	- [[Nodemon]]
+	- [[Express.js]]
+	    - [[Express middleware]] (`bodyParser, Morgan`)
+		- [[Custom middleware]]
+	    - [[HTTP requests in Express]]
+	- [[🖥️backend/tools/Next.js|Next.js]]
+- **Infra and cloud services**
+	- [[Docker 🐳]]
+	- [[Firebase]]
+	- [[Supabase]]

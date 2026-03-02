@@ -1,0 +1,4 @@
+- The total amount of income, property, assets, consumption, transactions, or other economic activity subject to taxation by a tax authority
+- 실제로 세금이 부과되는 기준이 되는 금액
+- 총 소득에서 각종 공제 항목(예: 기본공제금액, 필요경비 등)을 뺀 후의 금액
+- 예시: 한 사람이 연간 소득이 5천만 원이고, 각종 공제 금액이 1천만 원이라면, 과세표준은 4천만 원(5천만 원 - 1천만 원).

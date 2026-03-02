@@ -1,0 +1,2 @@
+Market index
+    - a portfolio of securities that represent a particular section of the stock market. Indexes are used as benchmarks to gauge the movement and performance of the different market segments, such as energy, technology, or financials

@@ -1,0 +1,82 @@
+# Synchronous I/O
+- **Steps**
+	- Caller sends a request and blocks
+		- OLD way.... the code below me cannot execute. nothing can happen lol
+	- Receiver responds, caller will be unblocked (can now execute rest of code)
+	- Caller and receiver are *in sync*
+- **Example of an OS synchronous I/O**
+	- Program asks OS to read from disk (triggers a system call, asking the [[kernel]] for data..)
+		- [[Bash, shell, terminal, command line, kernel]]
+	- Program (the caller) main thread is taken off of the CPU
+		- Main program is now asleep. CPU then immediately sends a command to the Disk Controller to put the file to be read into RAM
+		- *Context switching* -> It then finds another program that needs to run and loads its state onto the CPU because if not, the CPU is idle while fetching. (this is costly)
+	- Read completes
+		- CPU switches back to main program state, and it has the read data available
+		- program can resume execution
+# Asynchronous I/O
+- Steps
+	- Caller sends a request
+	- Caller can work until it gets a response
+	- Caller either: (runtime choose for us, like [[Node.js]])
+		-  **Readiness Model** (`epoll` / Network):
+            - OS notifies when the socket is ready to be read in the *socket buffer* (the kernel memory where incoming data waits).
+	            - *Kernel Space (Socket Buffer):* Memory owned and managed by the OS Kernel. When a network packet arrives at your network card (NIC), the hardware (via DMA) writes that data into this Kernel memory. Every active socket has an associated **Read Buffer** and **Write Buffer** in kernel space.
+			    - *User Space (Application Buffer):* This is memory owned by your program (e.g., a `byte[]` array or a String variable in your code). Your program **cannot** access Kernel Space directly.
+	            - *socket* = a file descriptor that represents a network connection (in linux everything is a file)
+        - **Completion Model** (`io_uring` / Disk):
+            - OS notifies when the data has already been copied to the *user buffer*.
+- *Notes for `epoll` and `io_uring`*
+	- every async request is either one of them!!
+		- If you are on **Linux**, it is almost certainly using **`epoll`**.
+		- If you are on **macOS**, it uses **`kqueue`** (Apple's version of epoll).
+		- If you are on **Windows**, it uses **IOCP** (Completion Ports).
+	- You almost never write code that directly calls them, the caller (runtime environment decides that for u!). the default is usually `epoll`, But u can force it if u want
+- **Worker Thread Pool** ([[Node.js]] File I/O):
+	- The runtime (`libuv`) offloads the task to a separate background thread. That background thread performs a standard **Synchronous/Blocking** call..
+	- The Main Thread remains unblocked, but blocking _is_ happening on the helper thread. (**so it looks asynchronous for us**)
+		- [[Promises]], [[Callback Functions]]
+- Caller and receiver are not necessarily in sync. Main thread remains in CPU
+# Situations
+- [[Request and response model]]
+	- Synchronicity is a client property
+		- most modern client libraries are asynchronous.. clients send LOTS of requests and they want to be able to do other things while waiting for them
+		- Ex) clients send an http request and do work
+- In real life
+	- Synchronous -> Asking someone a question in a meeting
+	- Asynchronous -> Sending emails. If you send an email you're not waiting for the response & do nothing lol.
+# Asynchronous everywhere
+- **Asynchronous programming**
+	- in Javascript, there is [[Promises]], [[Callback Functions]] etc where you can programmatically control this
+- **Asynchronous backend processing**
+	- Problem: The client may be asynchronous, but the entire process is still synchronous as client is still technically waiting for the response from the backend! 
+	- Solution: **Queues** (Message Brokers).
+        - Client sends request -> Backend adds to Queue -> Backend returns "`ID: 123`" immediately.
+	        - If a client sends a request, the backend doesn't promise to execute that immediately (since it might be doing other requests); it puts it into a queue & sends a response that it queued the request (id)
+	        - the client can check back ([[(Short) Polling]], etc... in future lecture)
+        - Client is fully disconnected and free.
+        - Worker processes the Queue in the background.
+- **Asynchronous commits in postgres**
+	- `Page` and `WAL`
+		- `Page` - fixed-size block of data. When you read/write a single row, postgres loads the entire page containing that row to memory. 
+		- `WAL` (Write-Ahead Log) - Before postgres touches the page, it writes down what to do before doing it
+	- *Synchronous Commit:* Tells the user "Done" only after the change is flushed to the `WAL` File (**Disk**).  (Guaranteed data safety, but it's costly!).
+	- *Asynchronous Commit:* Tell the user "Done" as soon as the changes are written in `WAL` Buffer (**Memory**). (Faster, but if the server crashes in that split second, you lose the last few transactions... dirty reads!!). So client can just move on to other things instead of waiting for the change being flushed to the disk 
+- **Asynchronous IO in Linux (`epoll`, `io_uring`)**
+	- mentioned above
+- **Asynchronous replication**
+	- Setup
+		- *Primary (Master/Leader)*: The only database instance that accepts **Writes** (INSERT, UPDATE, DELETE).
+	    - *Replica (Slave/Follower):* Read-only copies of the database. They just listen to the Primary and copy what it does.
+	- If user commits
+		- synchronous (waiting for ACK)
+			- Primary waits for Replicas to confirm (`ACK`) they have written the data before responding to the Client.
+            - **Pros:** Strong Consistency (Data is guaranteed to be on multiple nodes).
+            - **Cons:** High Latency (Slow), availability risk (if replicas are down, write fails).
+		- asynchronous (fire and forget)
+			- Primary responds "`Success`" to the Client immediately after writing locally. Replicas catch up in the background.
+            - **Pros:** Low Latency (Fast).
+            - **Cons:** **Replication Lag** (Data loss is possible if Primary crashes before propagation). This is "Eventual Consistency."
+- **Asynchronous OS fsync (fs cache)**
+	- When u write a file to ur OS, it doesn't go to disk immediately but it goes to the file system cache. But as soon as it goes to cache the OS immediately returns Success to the application.
+	- Asynchronously, the OS waits for lots of writes, and flushes them all together
+	- u can turn off the `fsync` property

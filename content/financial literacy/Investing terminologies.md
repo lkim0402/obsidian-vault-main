@@ -1,0 +1,83 @@
+# Core Concepts
+- [[Investing|What is investing?]]
+	- [[Investment]]
+	- [[Investing Tips]]
+- **Net worth & Value**
+    - [[Net worth]]: Total [[Asset|assets]] - [[liability]].
+    - [[Liquidity]]: How quickly an asset can be converted to cash.
+    - [[ROI]]: Return on Investment.
+- **Growth Mechanics**
+    - [[Compounding interest]]
+    - [[The Rule of 72]]
+- External factors affecting investment value
+	- [[Inflation (인플레이션)]]
+	- [[Interest rate (금리)]]
+	- [[Currency (환율)]]
+- **Market Dynamics & Terminology** 
+	- Market Sentiment (시황/시장의 상황) 
+		- 상품/주식의 매매나 거래의 상황
+		- The prevailing mood or trend of the market (e.g., "The market sentiment is bearish today")
+	- 서학개미 
+		- 해외 주식(주로 미국 주식)에 직접 투자하는 한국의 개인 투자자
+# Asset Classes & Securities
+- [[Investment Risk Ladder]]
+-  [[Asset]]/[[Securities]]
+- **Equities & Funds**
+	- Index fund
+		- A strategy (not a product type)
+		- Buying all instead of cherry picking stocks (like the `S&P 500 Index Fund`)
+		- Doesn't contain [[hedge funds]]
+    - [[Stocks]]: Ownership in a company.
+    - [[Dividend]]: Regular profit-sharing (Monthly dividends/달러 배당).
+    - [[ETF]]: Exchange Traded Funds.
+    - [[Mutual Funds]] 
+    - [[Hedge Funds]]
+- **Fixed Income & Cash**
+    - [[Bonds]]: Debt securities.
+    - [[CD (Certificate of Deposit)]]: Low-risk time deposits.
+- **Real Estate**
+    - [[Real Estate]]: Physical property.
+    - [[REIT (Real Estate Investment Trusts)]]: Real estate companies that trade like stocks.
+# Global Markets & Indices
+- **Stock Market (증시/증권시장)** 
+	- The marketplace where securities are bought and sold (주식, 채권과 같은 증권이 거래되는 금융 시장, 주식 시장의 전반적인 상황을 의미하기도 함)
+- **Exchange (거래소)** 
+	- The physical/digital venue for trading (e.g., KRX, NYSE).
+- **Stock Market Index (주가 지수)**
+    - A numerical representation of market performance compared to a base year. (e.g., Index 4000 means the market value has grown 40x since the base year of 100).
+    - *Note:* Distinct from a general **Index (지수)** like BMI or IQ; specific to stock prices.
+    - **Major Indices:**
+        - **NASDAQ (나스닥)**
+	        - (USA) Tech-heavy, high growth, volatile. Home to global IT giants (Apple, Tesla, Nvidia).
+        - **KOSPI (코스피)**
+	        - (Korea) The main board. Large-cap, traditional industries (Samsung, Hyundai). Stable but slower growth.
+        - **KOSDAQ (코스닥)** 
+	        - (Korea) The secondary market. Tech, Bio, Venture SMEs. High risk, high return (benchmarked against NASDAQ).
+	        - (한국) 중소기업, 벤처, 바이오/IT 중심, 코스피에 입성하기 전 단계거나, 규모는 작지만 성장 잠재력이 큰 기업들
+        - **S&P 500** 
+	        - (USA) The top 500 major US companies.
+# Portfolio Management
+-  [[Portfolio|What is a portfolio]]
+- [[Asset Correlation]]
+- [[Asset Allocation]]
+- [[Diversification]]
+- [[Rebalancing]]
+- [[Market Index]]
+# Accounting & Taxation
+- Accounting basics
+	- [[Budgeting]]
+	- [[Balance sheet (대차대조표)]]
+	- **Profit (차익)**: Selling price - [[Acquisition Price (취득가액)]].
+- Tax Framework (KR/US)
+	- [[Capital gains tax (양도소득제)]]: Tax on the profit from the sale of an asset.
+	- [[Standard Deduction (기본공제금액)]]: Amount that reduces taxable income.
+	- [[Tax base (과세표준)]]: The total amount of income/assets subject to taxation.
+	- [[Deemed Acquisition Price (의제 취득가액)]]
+# Sources
+- Books
+	- 딸아 돈공부 절대 미루지 마라
+- YouTube
+	- 머니그래피
+- Internet blogs/websites
+	- Investopedia
+	- Toss blog

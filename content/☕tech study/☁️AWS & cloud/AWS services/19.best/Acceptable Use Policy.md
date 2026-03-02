@@ -1,0 +1,3 @@
+- Describes what you're not allowed to do with AWS services
+	- If you violate this your account may be closed/banned, or even more problems
+- https://aws.amazon.com/aup/

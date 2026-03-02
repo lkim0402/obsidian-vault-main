@@ -1,0 +1,8 @@
+- allows your users to control your game or app using a device, touch, or gestures
+- OLD VS NEW
+	- Old -> **Input Manager**
+		- built in to the editor
+		- default if you do not install the Input System package
+	- New -> **Input System package**
+		- newer, more flexible system, which allows you to use any kind of Input Device to control your Unity content
+		- download it through the Package Manager

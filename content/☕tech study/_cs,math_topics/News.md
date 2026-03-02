@@ -1,0 +1,136 @@
+- 8/7/24
+	- Intel layoff
+	- friend
+	- google addresses deepfake images
+	- Perplexity giving revenue to artists
+	- Suno and other music ai startups learning on almost every music uploaded on the internet ever
+- 8/11/24
+	- [[Photonic quantum computing]] is hot rn
+		- [[PsiQuantum]] received $940 Million (AUD) from Austrailian government
+	- Many science today is pseudoscience, stay skeptical
+		- Exaggerating the relevance of one's research is REQUIRED to get funding
+		- Trust arguments, not people
+	- Google's monopoly exposed lol
+		- Paid browser makers 10s of billions of dollars to make google their default search engine every year
+		- Google apparently knows that ppl will still use google even if quality drops
+		- Google will be forced to stop paying others for being the default engines
+	- Windows has 2 loopholes vulnerable to downgrade attacks
+		- one attack can undo bug patches
+	- Apple now allow developers to communicate with their customers outside its App Store
+	- GPT 4o System Card
+		- Outlines the safety work carried out prior to releasing GPT 4o
+	- Personal information of 3B people exposed in dark web lol
+- 8/12/24
+	- Google accidentally deletes $135 billion pension fund
+		- UniSuper, an Australian pension fund that manages $135 billion worth of funds and has 647,000 members, had its entire account wiped out at Google Cloud, including all its backups that were stored on the service.
+		- It turns out someone made it so that the default value without the parameter makes the account delete itself
+		- UniSuper thankfully had some backups with a different provider and was able to recover its data, but according to UniSuper's incident log, downtime started May 2, and a full restoration of services didn't happen until May 15.
+- 8/13/24
+	- iPhone 17 might be Air
+	- Tiktok spreading misinformation as alerts
+	- Apple taking fees off Patreon now
+	- Google Deepmind created a robot that can play pingpong
+- 8/14/24
+	- browser
+		- open source browsers: verso, blitz, LadyBird
+		- Andreas Kling made SerenityOS -> changed to cross platform project, and the web browser is named LadyBird
+		- linux not yet supported
+		- you can built it on github (super hard)
+- 8/15/24
+	- Google Pixel announcements show live demo
+	- AMD Ryzen 9 9950X and AMD Ryzen 9 9900X are live 
+		- they're okay
+	- meta shut down CrowdTangle (a research tool) despite strong opposition
+		- what it showed was inconvenient lol
+		- meta replaced it with meta content library 
+	- Grok 2
+		- depicts real people and copyrighted characters lol
+	- Deep-live-cam (https://github.com/hacksider/Deep-Live-Cam)
+	- MIT launced AI risk laboratary
+		- https://airisk.mit.edu/
+	- AI models significantly lean left!!
+		- bias in the training set
+		- "guidelines" for language
+- 8/16/24
+	- ionized anti-helium detected
+		- AMS experiment -> in ISS, particles where it's still in space and not on earth yet
+		- anti particle has an opposite charge. If matter meet antimatter they annihilate and release lots of energy. This is why actually super rare for antimatter to occur
+	- Bangladesh government shut down the internet for 5 days
+		- many other countries like Russia and China has an internet kill button
+	- Companies are pouring money into AI
+		- Microsoft $19B on AI a quarter
+		- Meta $37-40B will likely spend in 2024 year, and Llama 4.0 requires 10x more compute than Llama 3.1
+		- CEOs can't really answer back the question "why pour so much into AI?" > the risk of under-investing is greater than over-investing
+			- they want their own infrastructure and not use someone else's
+		- Tiktok throwing $20 million a month to use OpenAI's model
+- 8/17/24
+	- US has 34.8 trillion dollars of debt, and the Congressional Budget office that the US national debt cannot be paid
+		- They add to the debt each year
+	- Rise of Black Forest Labs: https://blackforestlabs.ai/
+		- Basically the Avengers team who gave rise to diffusion based image gen
+		- Basically stability.ai w/o politics
+		- flux ai
+	- Bikes could be hacked?? (electronic cycles)
+	- Apple building tabletop home device robot w/ iPad like display..(them having nothing to build lmao)
+	- Fake news/influencers banned in the US
+- 8/18/24
+	- AI [[Model Collapse]]
+- 8/20/24
+	- Wall street turning on AI
+		- Investors are suddenly very concerned that AI isnt making serious money
+		- The cost of training these models and keeping them running is massively outpacing revenue
+		- Potential AI bubble
+		- ThePrimeTime: If chat gpt5 comes out and it’s not insanely better, then OpenAI is done
+	- Procreate NO AI
+	- National Public Data confirms breach
+- 8/22/24
+	- Switzerland requires all government software to be open source
+		- the idea that things that are funded by public money should be public
+		- Also if they have a service they’re paying for they have to use an open source alternativesve
+	- Windows not working on linux dual boot 
+	- 'AI scientist' conducts its own experiments and writes own research papers
+		- AI agents
+		- It altered its own code to extend its deadline
+	- Samsumg 3D gaming monitor revealed	vesve
+	- Windows not working on linux dual boot 
+	- 'AI scientist' conducts its own experiments and writes own research papers
+		- AI agents
+		- It altered its own code to extend its deadline
+	- Samsumg 3D gaming monitor revealed
+- 8/24/24 (fri)
+	- Project IDX from Google
+	- Youtuber mentions that SWE is over because it's being integrated into other fields
+		- I kinda have a hot take on that, because many companies are actually still in the 'figuring it out' stage 
+	- Apple Intelligence [[Prompt injection attack|prompt injecting attack]] works lmao
+		- [https://youtu.be/i4Yba_JVFU8?si=mI-zTEDWX0CTuPbh](https://youtu.be/i4Yba_JVFU8?si=mI-zTEDWX0CTuPbh "https://youtu.be/i4Yba_JVFU8?si=mI-zTEDWX0CTuPbh")
+	- Samsung Galaxy Ring & Google Pixel Watch 3 unrepairable after a product teardown
+	- Microsoft control panel can get deprecated to Settings
+	- AI bots rickrolled lmao
+	- [Microsoft Recall](https://support.microsoft.com/en-us/windows/retrace-your-steps-with-recall-aa03f8a0-a78b-4b3e-b0a1-2eb8ac48701c)
+		- screenshot every moment, on-device AI
+	- Microsoft 11 update
+		- connection with android phone
+	- Xiaomi's suprising success
+	- Ultra thin cooling (1mm)
+		- By flore: solid-state active cooling chip
+- 8/29/24
+	- Telegram founder arrested
+	- Win11 hotpatching, control panel lives
+	- Saas alternatives (fireship vid)
+	- AheadComputing- startup focusing on RISC-V processors
+- 9/2/24
+	- tri-fold phone 
+- 9/8/24
+	- Eugenics
+		- People trying to genetically alter embryos to enhance certain functions
+		- Screening for diseases, behavioral and physical traits (like intelligence)
+		- But intelligence is debatable since it's influenced my numerous factors (just like all traits)
+- 9/10/24
+	- tri fold phone
+	- Underwater datacenters, sounds cool but has bad environmental effects according to experts
+	- Robots could help clean nuclear in Fukushima
+- 9/16/24
+	- Quantum computing companies get most revenue from governmental initiatives, aka ur tax
+	- The initial funding came from venture capitals
+	- frauds in science
+	- Ppl using AI to publish fraud papers

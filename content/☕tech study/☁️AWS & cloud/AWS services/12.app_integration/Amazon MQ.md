@@ -1,0 +1,2 @@
+- AWS also supports open-source message broker services (Apache ActiveMQ and RabbitMQ) via the Amazon MQ service.
+- primarily helps customers that don't want to (or can't) use AWS own cloud-native solution SQS

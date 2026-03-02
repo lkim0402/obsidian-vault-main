@@ -1,0 +1,4 @@
+- $a \cdot b = a^T b = \sum^D_{d=1}a_db_d$
+- $a\cdot b = a_1b_1 + a_2b_2 + a_3b_3$
+- Takes 2 vectors, multiplies them element wise, then add those products together
+- Both input vectors must have the same shape

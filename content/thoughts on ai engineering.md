@@ -1,0 +1,80 @@
+2/16 - 2/17/26
+# thoughts (+ my place)
+- the reason i did a bootcamp!
+	- [[🐣Spring & SpringBoot]], [[Backend Engineering]]
+	- back then, i thought that AI related fields only accepted people with at least master degrees, so i wanted to switch to a more traditional "swe" role... and i didn't have much depth in software engineering so i chose to do a backend (springboot) bootcamp. 
+		- I could have done a full stack or a frontend course, but for me personally i was more intrigued by the problems backend had to face - scalability, maintaining servers & requests, cloud/infra stuff, writing apis etc
+	- But now, I think AI and backend engineering synergizes well together, and maybe I don't have to pick one of them but mesh them into 1 and do both? so right now i think i am in a good spot to position myself as an *AI-driven backend engineer* (whatever this implies lol)
+- what exactly is ai engineering? how does it fit so well with backend engineering?
+	- As far as I know, "AI work" largely is divided into AI research and AI integrators. The latter is the "AI engineering" part -> AI engineering feels like a "specialized backend" where you work with AI in a traditional backend/infra structure. 
+	- Some overlaps:
+		- API design ([[REST API]]), [[GraphQL]] etc - developing endpoints
+		- [[Cloud Engineering|cloud engineering & infra]],  [[🗃️Database|working with dbs]]
+		- security, scalability, monitoring
+	- The AI exclusive part:
+		- (The AI part where the traditional backend engineers don't face are (i think))
+		- RAG, AI agents (orchestration and chaining), handling non determinism (making guardrails)
+		- vector database & indexing
+		- optimizing LLM APIs (Claude, OpenAi, Llama) for cost/latency/accuracy
+	-  other sources:
+		- [AI-Powered Backend Engineer Roadmap (Spring Boot Focused)](https://devcookies.medium.com/ai-powered-backend-engineer-roadmap-spring-boot-focused-c6cd8f371de7)
+			- a roadmap that fits right into my current position?? lol
+		- https://www.linkedin.com/posts/arpit-adlakha-30691a101_ai-engineer-is-more-a-backend-engineer-than-activity-7307780650902700032-IeKt/
+			- **AI engineer is more backend engineer than an ML engineer**
+		- [Why Backend Engineers Should Learn AI](https://blog.masteringbackend.com/why-backend-engineers-should-learn-ai)
+		- surprising i couldn't find more resources in this intersection..
+- an interesting point 1
+	- [a redditor from this comment](https://www.reddit.com/r/LangChain/comments/1mk2ftf/comment/n7hcsk0/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) mentioned that nobody was an "ai engineer" literally few years ago - theres so many jargon and AI terminology thrown around that normal SWE had difficulty understanding them. But as soon as you get into it and really understand the concepts, `LangGraph` or `Pydantic Ai` or other AI frameworks becomes rlly easy + straightforward
+		- + understanding this is what makes you replaceable by someone who understands this and uses AI
+		- + they also build all AI logic with langgraph (they think there is no more convenient way to build sophisticated AI backend as it handles everything - monitoring, deployment etc)
+- an interesting point 2
+	- i talked with my friend jenny (rn swe in microsoft), and i asked about her current job/task/projects, and she mentioned that AI can really replace a lot of the manual labor of writing code, but it still needs a human-in-the-loop to guide it because it doesn’t have good judgement deciding things, but it does seem inevitable that SWE will become managing a ton of subagents
+	- which also led me to wonder about the future of SWE because, companies are already not hiring juniors but instead, they are just adding more "junior AIs" that the seniors can control to do the work of human junior devs... (what is going on in the cs industry?)
+	- as for my career, traditional swe will be really hard to break in esp for juniors/new grads, so im planning to grind both ai engineering + backend so that my resume will be more noticed :'))
+# which tools?
+- [[LangChain]]
+	- [Reddit - Why are people hating LangChain so much, organisations are also not preferring projects built on top of LangChain](https://www.reddit.com/r/LangChain/comments/1gmfyi2/why_are_people_hating_langchain_so_much/)
+		- re-occuring reasons why ppl dont like it: unnecessary complexity due to over-abstraction
+		- apparently a LOT of ppl jumped on the langchain ship w/o understanding what it was doing (and 90% of langchain's codebase is unnecessary)
+	- other alternatives (other than langgraph)
+		- [atomic agents (github)](https://github.com/BrainBlend-AI/atomic-agents)
+- [[LangGraph]] + Pydantic AI
+	- [Reddit - Why are people choosing LangGraph + PydanticAI for production AI agents?](https://www.reddit.com/r/LangChain/?f=flair_name%3A%22Question%20%7C%20Help%22)
+	- this combo works well in production because it gives you structured outputs out of the box
+		- LangGraph handles routing, orchestration, and state management, so you get a clear separation between agent logic and data structure
+	- langgraph allows u to create the chain urself + add more fine-grain control, which helps u debug better and is more scalable
+	- [Reddit - How are you using LangGraph? Is your company using it in production?](https://www.reddit.com/r/LangChain/comments/1mk2ftf/how_are_you_using_langgraph_is_your_company_using/)
+	- [someone moving from langchain to langgraph](https://www.reddit.com/r/LangChain/comments/1mk2ftf/comment/n7o7s31/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) 
+- some inspirations
+	- [this comment from reddit](https://www.reddit.com/r/LangChain/comments/1gmfyi2/comment/lw41rad/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button): this dude specialized in a LOT of AI stuff AND software/enterprise stuff. Their advice is to **learn programming patterns and learn to write good and clean code**. -> singletons, inheritance, factory pattern, etc.. they reappear everywhere. And they realized that langchain was actually useless and overcomplicated
+		- reference recs: "uncle bob" (j google that)
+- some tips? ([from a reddit comment](https://www.reddit.com/r/LangChain/comments/1kpkybb/comment/mt074ii/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button))
+	- *agent specificity* - don’t make generic agents. Don’t make 1 agent to rule them all - that’s a fools errand (also the #1 mistake from ppl!!)
+	- *all agents need exit ramps* - give them the ability and direction to kick something to a human if they can complete a task
+	- *robust resumption rules* - agents can and will get disrupted by unexpected situations. The ability to stop, resume by getting back up to speed is critical to success
+	- *plan, plan, plan* - a shitty directionless plan will result is subpar results.
+	- others
+		- Frameworks that lock in control flow often miss decision points, get stuck in loops, go down rabbit holes that can’t continue. 
+		- Frameworks that don’t regulate flow, but focus on robust conversation management/handoff management often terminate prematurely, don’t complete, or meander inefficiently. 
+		- Master single agents first, do your own manual handoff between agents so you can control flow and data handoffs, so that you understand what is likely to happen, before trying a multi-agent ecosystem. 
+		- Once an agent tilts the system to an undesirable direction gets magnified with each subsequent agent interaction. It’s the old game of telephone that you need to combat.
+# domain knowledge?
+> A combination of AI and backend engineering
+- AI, ML, DL fundamental knowledge
+	- [[python]] - know the ins and outs..
+	- math! - calculus and linear alg (learning on ipad)
+	- deep learning udemy course
+	- andrej karpathy's yt vid series
+	- books
+		- the hundred-page machine learning book
+	- [STOP Taking Random AI Courses - Read These Books Instead](https://youtu.be/eE6yvtKLwvk?si=tu-uoO5Olz6Hberl)
+	- pytorch!!!
+- ai engineering
+	- read the AI engineering book (chip huyen)
+- [[Backend engineering]] as a field
+	- [[☕Java]] for backend
+	- the important and basic concepts
+	- database
+	- distributed systems
+		- designing data-intensive applications (book)
+

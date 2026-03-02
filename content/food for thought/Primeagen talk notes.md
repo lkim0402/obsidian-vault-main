@@ -1,0 +1,23 @@
+- Primeagen (Laravel talk) https://youtu.be/96VlfN7ViyE?si=kYsp1vG8wYVYtwpb
+	- calculus
+		- He took calculus 3 times (failed 2 times, got a c on the 3rd time)
+		- He decided he will figure out calculus, he spent 2 hrs in class, 2 hrs in math center, 6-8 hrs self study, for 5 days. It made him from worst student to objectively the best student
+		- he learned that when something is super difficult, if **he just have time and determination, he can achieve anything**
+	- groovy
+		- joined netflix, job was groovy backend for 9 months (which primeagen says is the worst language lmao)
+		- he took the opportunity to just..do the best -> success (no production outages). not a single person wanted to work on this
+		- boss happy, also asked him to rewrite the data structure (groovy) which no one wants to fix, and ALSO did it well 
+	- BET ON YOURSELF THAT YOU CAN SOLVE SOMETHING THAT YOU DO NOT KNOW
+	- also grow the wisdom to know what is valuable
+
+- How am I suppose to get a job as a software engineer? 
+	- https://youtu.be/nmhX3_m84Is?si=xaOhbceAREJj6ELU
+	- Realize you are being handed the exact checklist to be able to dunk on an interview for a company that will give you 6 figures
+		- figure out what they want, crush what they want
+		- with lil bit of hard work and some time, you can explore a LOT of things
+		- take the time, see what the job require
+		- most companies dont hire the pest person EVER, they want someone who can understand how to solve problems
+	- meet ppl
+		- discord, bounce ideas and discuss things, go to meetups, talk about tech, practice
+		- find companies u dont really care getting hired and become goot at interviews and the art of practicing your ideas
+	- Look at this as an ADVENTURE and not just some injustice

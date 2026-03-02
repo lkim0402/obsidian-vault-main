@@ -1,0 +1,240 @@
+> One Bash command: `command/program option(s) argument(s)`
+
+- [[File directories in Linux]]
+- [[🐧Linux]]
+- Commands for package management
+	- [[Package Management]]
+#  Location / Navigation
+- A path on the shell = delimited list of directories
+	- `/` - Linux/Mac
+		- the path `/` is the “root” of the file system, under which all directories and files lie
+		- A path that starts with `/` is called an _absolute_ path. Any other path is a _relative_ path.
+	- `\` - Windows
+		- there is one root for each disk partition (e.g., `C:\`)
+- `.` and `..`
+	- `.` = current
+	- `..` = parent
+- `pwd` 
+	- print working directory -> gives us current directory
+	- certain shells might be configured in a way that they show us the current directory we're at
+		- `leejun@leejun-VirtualBox:~$` -> the ~ tells us that we're rn in our home directory (our user folder) . Can be configured.
+- `cd [directory_name]`
+	- change directory
+	- just `~` -> user home directory (like `/home/leejun)
+		- `cd ~/Desktop`
+		- same as just typing `cd`
+	- `cd /` 
+		- going into the absolute root folder path where everything starts
+	- `cd ..`
+		- going up to parent
+	- cd `../..`
+		- going up 2 parents
+	- `cd ~` or `cd`
+		- always goes to user's home directory (no matter where you are)
+	- `cd - `
+		- directory *before*
+# Basic Commands
+- Executing multiple commands
+	- Just add a semicolon
+	- `command1; command2;`
+		- can optionally omit the last ;
+	- `echo -n 'Hello'; echo 'World'`
+- `echo`
+	- allows us to output text in the terminal
+	- string wrapped in **single quotes**, or escape just the relevant character with `\` (`My\ Photos`)
+	- `echo -n 'I love Bash'`
+		- `echo` -> command
+		- `-n` -> option(s)
+		- `I love Bash` -> argument(s)
+	- options
+		- `-n`
+			- by default, it will output a line break at the end
+			- we can disable this with the option `-n`
+		- `-e`
+			- enables backlash escapes 
+			- `echo -e 'Line \nLine2'`
+	-  (you can combine options
+		- `echo -en 'I love Bash!\n'` (order x matter mostly, depends on the command)
+		- `echo -e -n 'I love Bash!\n'`
+- `>`
+	- 꺽쇄, bracket
+	- 실행 output을 파일로 저장할 때
+	- `echo hello world > hi.txt`
+		- This creates file if non existent
+		- [[Redirection - Manage Data Streams]]
+- `ls`
+	- prints the contents of working directory
+	- `ls [options..] [path]`
+	- options
+		- `-a`: lists all entries including hidden files
+		- `-r`: reverse order while sorting
+		- `-t`: sort by modification time, newest first
+		- `-l`: long format (includes timestamp)
+		- `--color={always,never,auto}`: enables colorful output (enabled in ubuntu by default)
+	- Can also specify a path we want to list
+		- `ls -ta --color ~/Desktop`
+		- `ls ready/`
+- `ls -l`
+	- Example:
+		- `drwxr-xr-x 1 Leejun 197121      0 Feb  1  2025  Web_dev/`
+			- `d` - file type is directory
+			- Permissions
+				- `rwx` - **Owner** Permissions (`Leejun`) - Read, Write, Execute
+				- `r-x` - Group Permissions (`197121`) - Read, Execute
+				- `r-x` - Permission for others - Read, Execute
+			- `1` - number of hard links (how many hard links point to this directory)
+			- `Leejun` - Owner
+			- `197121` - Group
+			- `0` - Size of the item/folder in bytes (often misleading)
+			- `Feb  1  2025` - last modification date
+			- `Web_dev/` - name of the directory
+		- `-rw-r--r-- 1 Leejun 197121  28077 Jan 17  2025 증명사진.jpg`
+			- `-` - file type is file
+- `date`
+	- tells you the date
+	- `Sat, Aug 23, 2025  6:37:56 PM`
+- `clear`
+	- clears terminal
+	- `Ctrl + L`
+# Getting help
+- `--help/ -h`
+	- a built-in "usage" of the command, and not all commands implement it, or at least not the same way
+		- shows possible list of args
+	- `ls -h`
+		- just add this after the command
+	- Inside: `Usage: ls [OPTION]... [FILE]...`
+		- `...` -> 1 or more
+		- `[]` -> means optional
+		- option -> anything that takes a value
+		- flag -> anything that DOESN'T take a value
+- `man`
+	- a command by itself which is a pager program that reads manual
+	- `man <COMMAND>`
+	- `man ls`
+	- man pages (documentation) must be installed on your system!
+	- (it seems like ppl usually prefer `man` than `--help`)
+# File Management
+- `touch`
+	- create 1 or more empty file(s)
+	- `touch test1.txt test2.txt`
+	- actual use case
+		- it modifies the timestamp of a file!
+		- if file alr exists, only its timestamp will be modified. Otherwise, a new (and empty) file is created!
+	- use `.` to create hidden files
+- `mkdir`
+	- creates a new directory
+- `mv <file> <destination>/ `
+	- moves an existing file to another location
+		- `mv test.txt folder/`
+	- can also be used to rename an existing file 
+		- `mv test.txt test2.txt`
+	- both at once
+		- `mv text.txt folder/test2.txt`
+	- like "cut and paste"
+- `cp`
+	- copy existing file(s)
+	- `cp -r` : copies a whole folder
+		- `-r` stands for recursive
+	- `cp text1.txt text2.txt`
+		- will **copy the contents of `text1.txt` into a new file called `text2.txt`**.
+	- `cp text1.txt newFolder`
+	- `cp text1.txt newFolder/text2.txt`
+	- like "copy and paste"
+- `rm`
+	- removes a file(s)
+	- for deleting a directory, use the option `-r`
+		- works for empty and non-empty directories
+	- for skipping confirmation, use `-f` (NO UNDO)
+	- deletes it PERMANENTLY
+	- `rm <file>`
+	- `rm -r <directory>`
+	- `rm -f <file>`
+	- `rm -rf <directory> `
+- `rmdir`
+	- removes empty directory (way safer than `rm -r`)
+- `tree`
+	- shows tree structure
+- `find`
+	- provide path as first parameter
+	- we get a list of all the files & folders in the path/folder (ex. `find .`)
+	- filter: type
+		- `find . -type f` (type file - f, type directory - d)
+	- filter: modification within the last 7 days
+		- `find . -type f -mtime-7`
+	- filter: files larger than 10MB
+		- `find . -type f -size +10M`
+	- delete all empty files in a directory
+		- `find . -empty -delete`
+# File Management - text
+- `cat`
+	- allows to print the contents of a file
+	- can actually kinda print binary data (but it might not work properly or break the terminal)
+	- might cut the top parts of the file if file too big
+- `head`
+	- shows the start of a text file
+	- we can specify the Parameter `-n` for the number of lines
+	- `head -n 5 data.txt`
+- `tail`
+	- read file from the end
+	- same options as `head`
+	- `tail -n 5 data.txt`
+- `less`
+	- we can use this to read large files
+	- arrow keys - navigate through the tile
+	- f (forward) and b (backward) - navigate a whole page ahead or back 
+	- `50p` - navigating to percentage of our content (ex. to 50%)
+	- `=`  - shows our current progress
+	- `-N` - shows rows
+	- search
+		- `/search term` - forward search
+		- `?search term` - backward search
+	- `q` - quit
+	- waaay more options but these are the most important
+- `wc`
+	- usually used to check if file is big or not (with the `-l` flag)
+	- `wc file.txt` -> same as `wc -lwc file.txt`
+	- number of lines, words, bytes
+	- can use `-l, -w, -c` flags separately (most important flags)
+- `du` (disk usage)
+	- calculates the size of all items in the folder (or we can pass in a file name as parameter)
+	- `du -s` - to get summary
+	- `du romeo.txt`
+	- the unit depends (`-b` for bytes, `-k` for kilobytes, `-h` for human readable format)
+		- ubuntu usually tells the side in kb w/o the flags
+# Editing files w/ nano
+- nano
+	- no built in text editor for bash, so we have to install additional software for that
+	- 4 popular options
+		- pico / nano (upgraded ver of pico) - simple editor for text files in bash
+		- vi / vim (upgraded ver of vi) - more advanced text editor
+	- Install process depends on the system you're using
+- `nano text.txt`
+	- creates new file if it doesn't exist
+- `Ctrl + O` - write out/save
+# Commands used with pipe `|`
+-  `tee`
+	- With `|` and the `tee` command, you can create a `stdout` and write it to a file at the SAME time!
+	- Example
+		- `echo 'Hello Bash' | tee hello.txt`
+			- You want `Hello Bash` to be printed to `stdout` and also written into `hello.txt`
+		- `echo 'Hello Bash' | tee hello.txt | wc -c`
+			- multiple pipes
+			- counting the text
+	- Appending
+		- `echo 'Hello Bash' | tee -a hello.txt`
+-  `ping`
+	- Allows us to send a ping packet to another server (ex. a remote server).
+		- Related: [[Backend & Main Components Explained#Server|Backend Explained - Servers]]
+	- We can use to test if our connection is reachable or disrupted
+	- Example
+		- `ping google.com`
+			- sends a ping packet to `google.com`
+		- `ping non_existing.com 2>&1 | tee ping.txt`
+			- Redirects `stderr (2)` to `stdout (1)`, so both error messages and normal output are now part of `stdout`.
+			- The `tee` command takes `stdin` and writes it to both terminal (`stdout`) and `ping.txt`
+
+# Permission
+- `chmod`
+	- change mode
+	- `chmod +x semester`
+		- gives execute command permission to semester

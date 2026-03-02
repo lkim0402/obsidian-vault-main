@@ -1,0 +1,4 @@
+- Contains explicit values for all of these parameters (colors, values, textures, etc) that we can input to our shader
+	- think of it as preconfigured parameters to be used when rendering something with a shader
+- you can't add a shader to an object. you apply a material to an object, and that material then has a reference to the shader
+- you can have multiple materials that all use the same shader, but have different input data (very common)

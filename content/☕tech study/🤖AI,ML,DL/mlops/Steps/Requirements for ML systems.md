@@ -1,0 +1,22 @@
+> Varies from company by company, but generally should follow these
+
+- Reliability
+	- The system should continue to perform the correct function at the desired level of performance even in the face of adversity
+	- ML systems can fail silently (if you google translate into a language you don't know, it's hard to check correctness)
+- Scalability
+	- Ways your ML model can grow
+		- Complexity: larger parameters of your model
+		- Volume traffic: your model might have 10k requests daily, but it gan grow to 1-10M.
+		- Model cout: You might use more than 1 model for use cases
+	- Whichever way your system grows, there should be reasonable ways of dealing with that growth
+		- Resource scaling: upscaling or downscaling
+			- Autoscaling: automatically scaling up and down the number of machines depending on usage. This feature can be tricky to implement.
+		- Artifact management. Managing one hundred models is very different from managing one model.
+			- You will need to automate the monitoring process and manage code generation
+- Maintainability
+	- Many ppl (MLE, DevOps, SME) contributes to an ML system
+	- Set up your system so that other ppl can use it easily
+		- Document
+		- Version code, data, and artifacts
+- Adaptability
+	- should have some capacity for both discovering aspects for performance improvement and allowing updates without service interruption

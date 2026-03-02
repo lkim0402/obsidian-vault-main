@@ -1,0 +1,28 @@
+- 정보 전달의 목적 - 그냥 설명임
+	- 기능도 전달할 수 있음
+- Types
+	- 표준 annotation
+		- `@Override`
+		- `@Deprecated`
+	- Spring framework
+		- `@Required`
+		- `@Autowired`
+		- `@Qualitier`
+		- 엄청 많은데........... 다 중요함...ㅜ
+			- 위우지 않음 > 나중에 숨쉬듯이 쓰게 됨
+			- 하나하나씩 단계별로
+			- spring은 annotation기반으로 많은 것을 함
+	- meta annotation
+		- 에노테이션을 만드는데 사용됨
+		- we can make the annotations
+			- 어디에 적용되는지
+		- `@Target`
+		- `@Inherited`
+			- 하위 클래스가 이 annotation을 상속받게 됨
+		- `@Retention`
+			- 지속시간 (생애주기)
+		- `@Repeatable`
+			- annotation을 여러번 반복해서 쓸 수 있는가?
+
+![[Pasted image 20250605191102.png]]
+- 자바독

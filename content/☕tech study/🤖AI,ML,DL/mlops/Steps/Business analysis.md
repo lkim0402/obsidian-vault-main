@@ -1,0 +1,1 @@
+Model performance needs to be evaluated against business goals and analyzed to generate business insights. These insights can then be used to eliminate unpro‐ ductive projects or scope out new projects. This step is closely related to the first step.

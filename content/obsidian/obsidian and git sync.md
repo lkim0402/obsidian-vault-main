@@ -1,0 +1,3 @@
+- right now 
+- https://quartz.jzhao.xyz/setting-up-your-GitHub-repository
+- instead of using `github sync` plugin, 

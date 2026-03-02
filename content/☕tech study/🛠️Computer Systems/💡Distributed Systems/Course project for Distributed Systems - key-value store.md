@@ -1,0 +1,7 @@
+- Build a sharded, linearizable, available key-value store, with dynamic load balancing and atomic multi-key transactions
+	- Key-value store: distributed hash table
+	- Linearizable: equivalent to a single node
+	- Available: continues to work despite failures
+	- Sharded: keys on multiple nodes 
+	- Dynamic load balancing: keys move between nodes 
+	- Multi-key atomicity: linearizable for multi-key ops

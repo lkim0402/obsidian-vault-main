@@ -1,0 +1,28 @@
+- One request, a very very long response (the response doesn't have an end lol)
+- the client understands these streaming chunks and parses the msgs in between
+- limitations of [[Request and response model]]
+	- vanilla req/res isn't ideal for notification backend
+	- client wants real time notification from backend
+		- user just logged in, a msg is just received, etc
+	- push works but restrictive
+	- SSE work with request/response and http
+- designed for http
+# SSE
+![[sse.png]]
+- A response has start and end
+- steps
+	- client sends a request
+	- server sends logical events as past of response
+		- doesn't send the final lines of HTTP request so the req doesn't end -> *a request with an unending response*
+		- header has `text/event-stream`
+	- we send events in chunks, the client is smart enough to parse the stream data 
+- pros
+	- real time
+		- like an open channel with the server that immediately sends us a feed of infor
+	- compatible with [[Request and response model]] and HTTP
+- cons
+	- client must be online (to receive the responses)
+	- client might not be able to handle (same problem as [[push model]])
+	- [[(Short) Polling]] is preferred for light clients
+	- HTTP/1.1 problem (6 connections) -> future lecture
+		- chrome can only have 6 connections.. thats why HTTP2 is better (way more connections allowed)

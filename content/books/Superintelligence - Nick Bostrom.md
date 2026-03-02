@@ -1,0 +1,23 @@
+- 1st ai boom
+	- past AI were good at X domain, but didn't prove success to extent to wider tasks
+		- combinatorial explosion
+	- to overcome combinatorial explosion, an algorithm that exploit structure in the target domain & take advantage of prior knowledge by using heuristic search, planning & flexible abstract representations were needed (poorly developed at that time)
+	- other problems
+		- poor methods of handling uncertainty
+		- reliance on ungrounded symbolic representation
+		- data scarcity
+		- severe hardware limitations
+- 2nd boom
+	- includes neural networks & genetic algorithms
+	- NNs 
+		- a damage resulted in small degradation of performance instead of a total crash
+		- learn from experience
+		- backprop algorithm
+		- connectionism -> emphasized the importance of massively parallel sub-symbolic processing
+	- genetic algorithms/programming
+		- in evolutionary models, a population of candidate solutions (which can be data structures or programs) is maintained, and new candidate solutions are generated randomly by mutating or recombining variants in the existing population
+		- periodically, population is pruned by applying a selection criterion that allows only the better candidates survive
+		- iterated over 1000s generations -> the avg quality of solutions in the candidate pool gradually increases
+		- when it works, it can produce solutions strikingly novel & unintuitive
+		- in principle, this can happen without much human input (the criteria)
+		- but often defeated by the combinatorial explosion

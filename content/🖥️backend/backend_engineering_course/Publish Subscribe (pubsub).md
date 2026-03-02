@@ -1,0 +1,27 @@
+- [[Request and response model]] 
+	- pros - elegant and simple
+	- cons - bad for multiple receivers, high coupling, client/server have to be always running
+# the pub/sub model
+![[pubsub.png]]
+- this diagram
+	- shows a **chain** of Pub/Sub relationships (often called an "Event-Driven Architecture" or a "Pipeline"), rather than just one single publisher and one single subscriber
+	- components don't talk to each other directly (e.g., The Upload Service doesn't call the Compress Service). Instead, they talk to a "middleman" (the Topic/Queue)
+	- what is happening (gemini explained)
+		- **The Publishers (Producers):**
+		    - The **Upload Service** publishes a message: _"Hey, a new raw video is ready!"_ into the **"Raw mp4 videos"** topic.
+		    - The **Compress Service** acts as a publisher too! After it finishes its job, it publishes a message: _"Hey, the video is now compressed!"_ into the **"Compressed video"** topic.
+		- **The Topics (Channels):**
+		    - The gray boxes in the middle (**"Raw mp4 videos"**, **"Compressed video"**, etc.) are the topics. They hold the messages until someone is ready to pick them up.
+		- **The Subscribers (Consumers):**
+		    - The **Compress Service** subscribes to the **"Raw mp4 videos"** topic. It sits there waiting for a message to arrive.
+		    - The **Format Service** subscribes to the **"Compressed video"** topic.
+		    - The **Notification Service** subscribes to the final topics (likely "4k video" or all processed topics) so it knows when to email the user.
+- pros
+	- scales with multiple receivers
+	- great or microservices
+	- loose coupling
+	- works while client is not running
+- cons
+	- message delivery issues (how do i know the consumer/subscriber actually got the message?)
+	- complexity
+	- network congestion

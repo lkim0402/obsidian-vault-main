@@ -1,0 +1,15 @@
+- Java application lifecycle
+	- First you write your code in [[☕Java|Java]]. For the computer to understand it, this code must be **compiled** into a format that the Java Virtual Machine (JVM) can read. This compiled format is called **Java bytecode**, which is stored in `.class` files.
+		- [[JVM, JRE, JDK & the Compilation Process]]
+	- However, a real-world project isn't just one file. It's a collection of many `.class` files, along with other necessary components like a web server (e.g., Tomcat) and various **dependencies** (external libraries your code needs to run). All of these components are bundled together into a single, executable file called a **JAR (Java Archive)** file.
+		- A crucial command to know is how to run this file from the terminal: `java -jar [your-jar-file-name].jar`
+- The Problem
+	- Now, you have your `.jar` file. The problem arises when you try to share this file with others or deploy it to a server. The new computer might have:
+		- A different version of Java installed.
+		- Missing dependencies.
+		- Conflicting software configurations.
+	- This creates a painful situation where developers waste a lot of time setting up the correct environment just to run the application, instead of actually building things... Older tech such as FTP and SCP exist but doesn't really solve the core issue of environment inconsistency
+- *Solution: Docker*
+	- Docker solves this problem by packaging your application (the `.jar` file) along with _all_ of its dependencies—including the correct Java version (JRE), the application server, and any other required libraries—into a single, isolated container
+	- acts like a self-contained, portable little computer that has everything your application needs to run, guaranteed
+	- You can then share and run this container on any machine that has Docker installed, and it will work exactly the same way, every single time

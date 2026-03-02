@@ -1,0 +1,49 @@
+# What we want
+- How to make a set of computers work together
+	- Correctly
+	- Efficiently
+	- At (huge) scale
+	- With high availability
+	- Working despite messages being lost and/or taking a variable amount of time
+	- Working despite nodes crashing or behaving badly, or being offline
+		- [[Lab Framework#Node (Abstract class)|Lab Framework - Node]]
+- Why Distributed Systems?
+	- Conquer geographic separation
+		- 2.3B smartphone users; locality is crucial
+		- Some systems are inherently physically distributed
+	- Availability despite unreliable components
+		- System shouldn’t fail when one computer does
+		- fault tolerance!
+	- Scale up capacity
+		- Cycles, memory, disks, network bandwidth
+	- Customize computers for specific tasks
+		- Ex: disaggregated storage, email, backup
+	- Security / Isolation
+- There are many problems, lots of them solved, and lots of them unsolved
+# Challenges
+- You should try EVERYTHING and get it working in a single computer before trying distributed systems
+- A pessimistic view
+	- Leslie Lamport, circa 1990: “A distributed system is one where you can’t get your work done because some machine you’ve never heard of is broken.”
+- Problem
+	- "Common knowledge" cannot be achieved by communicating through *unreliable channels*
+- Why is distributed systems so hard
+	- Concurrency
+		- You get all the challenges with concurrent programming, weird timing, interactions, etc
+	- Partial failures
+		- Because you have multiple pieces plus a network, you can have very unexpected failure patterns (and partial failures)
+		- If you have 1 computer - it works or doesn't. 
+		- But in distributed systems, you have partial failures
+	- Performance needs careful design
+		- Often we want distributed systems to get higher performance, like 1000 computers worth of performance (1000x speed up)
+		- Related to *scalability* - 2x computers/resources = 2x throughput
+- [[Two vs Three Tier Architecture]]
+# Now (modern)
+- Today a distributed system is one where you can get your work done (almost always):
+	- wherever you are, whenever you want
+	- even if parts of the system aren’t working
+	- no matter how many other people are using it
+	- as if it was a single dedicated system just for you
+	- (almost) never fails
+# Next
+- Building block: How do we connect these different elements?
+	- [[RPC (Remote Procedure Call)]]

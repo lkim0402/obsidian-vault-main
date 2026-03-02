@@ -1,0 +1,21 @@
+- [balatro dev (local thunk)'s post - Bad Grades](https://localthunk.com/blog/bad-grades)
+
+3/2/26
+- For the longest time, I think I didn't like CS and tech... or more like, I was *indifferent*. 
+	- Pre COVID, pre ChatGPT era, I was 18 years old and was thinking about what career I should pursue, and chose CS because of the same ol reasons - great pay, it gives entrance to the US (visas, as part of STEM), and... just why not? It seems like a great pathway (although right now the job market is terrible lmao)
+	- But doing assignments, going to school for CS... didn't really make me interested. I was an OK student, but I didn't really go ins and outs to really, thoroughly understand the subject. I didn't ask questions or do additional explorations lol. I just did what I was given, and spent the rest of my time doing other things - I was quite literally interested in a myriad of things (art, fitness/health, economics and finance) and I didn't even think about diving deeper into CS for some reason. 
+	- Then when it was time for career prep and resume building, I panicked because my resume was quite empty except for school work, and I decided to try doing projects... spring boot, ai-related projects... Looking back, I was stuck on this "exploring everything" era where I just did bunch of things so I could decorate my resume, and I just ran after the next best thing that looked like "the future". 
+- But it's just quite recently that I saw the "interestingness" of computer science, or just technology, software in general. From the web & protocols, linux and the terminal, software engineering, graphics programming, there were so many interesting branches of tech! IDK what took so late for me to realize this simple thing, but I realized that back then I really had no genuine curiosity, and I was just trying to swim on the surface level. It's only now that I can see the discipline of computer science as a whole field, and the art of coding. 
+- That being said, I believe getting your spark back starts from personal projects... but by doing something you really want to make instead of following random tutorials. During my most recent internship, my mentor had mentioned that my projects seemed like I did them only to impress recruiters,, which I couldn't deny (lol). And ever since then, I just firmly decided that I won't do spring boot stuff anymore, instead focusing on other things like game dev and graphics and ai, doing the things I liked.
+- Why was it so hard for me to just..... do the things that I liked? Why? 
+	- Essentially, I had to go through a gap year and doing so many different things (bootcamp, projects) just to find out what I actually liked. This is something that I will have to think about..ugh. 
+	- The good is that I have more experience and I got to clearly know what I actually want. The bad is that I used up too much time lol just to figure out i don't like what i was doing.
+	- I think part of this entire thing stems from my anxiety. I pretty much struggled with anxiety a LOT growing up, and most worries of my anxiety is about the future. I want a stable job and a stable life in a good company with good work life balance. There is always some sort of conflict in me whenever I have to make decisions - one side argues that I need to do something that is clearly for job search, which includes spring boot, cloud engineering etc. the other side argues that I should do a passion project, namely game dev, art, or some type of creation. 
+- Things I like, or wanna try
+	- game dev 
+		- participating in game jams, or making my own game!
+		- modding games can be under this, like balatro or stardew valley
+	- making websites (web dev)
+		- at least i want to be comfortable in react, nextjs, javascript, tailwind so that i can customize my personal website however i want
+	- graphics programming, p5js
+	- ai engineering 

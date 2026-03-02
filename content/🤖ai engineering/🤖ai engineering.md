@@ -1,0 +1,13 @@
+- [[AI Agent]]
+- [[Agentic workflows]]
+- [[Model Context Protocol (MCP)]]
+- [[MCP gateway]]
+# Tools
+- [[LangChain]]
+- [[LangGraph]]
+- JupyterLab
+	- next-generation web-based user interface
+	- has all features of the classic Jupiter Notebook in a flexible and powerful user interface
+		- notebook, terminal, text editor, file browser
+- [[Google Cloud]]
+- [[HuggingFace]]

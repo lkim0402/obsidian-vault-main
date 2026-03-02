@@ -1,0 +1,23 @@
+- understanding how things work.. if you have some bug/issue you can immediately identify where the problem is, instead of being confused looking at a black box
+- Your application is doing *waaay more than the code you write!!*
+- what will this course include?
+	- backend communication design patterns
+		- how client connects to the backend (polling, sse, multiplexing, etc)
+	- protocols
+		- what is it? properties & rules? OSI model (the most important!)? UDP/TCP? handshake? etc
+	- HTTPs
+	- Backend execution patterns
+		- learn how much the kernel actually offloads the work for us! -> then we can look into contributing to linux kernels
+	- Proxying and load balancing
+		- core of true backend engineering
+# backend communication design patterns
+- [[Request and response model]]
+- [[Synchronous vs Asynchronous]]
+- [[Push model]]
+- [[(Short) Polling]]
+- [[Long polling]] // review from here
+- [[Server Sent Events]]
+- [[Publish Subscribe (pubsub)]]
+- [[Multiplexing vs Demultiplexing]]
+- [[Stateful vs Stateless]]
+- [[Sidecar Pattern]]

@@ -1,0 +1,8 @@
+- Computers don't understand human programming languages. 
+	- Their processors (CPUs) only understand **machine code**, which is a sequence of binary numbers (1s and 0s).
+- So programmers write in high-level programming language because we can't write it in binary lol.
+- It is then fed to a **compiler** before running on the computer
+	- A compiler
+		- Main job is to translate the **source code** (the human-readable code you write) into an equivalent program in another language, most often into machine code
+	- Native compiler
+		- A type of compiler that translates directly into machine language & creates an *executable* - a program that can be executed directly on the computer

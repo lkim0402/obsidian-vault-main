@@ -1,0 +1,13 @@
+- Syntax errors
+	- Occur when you misuse Java. 
+	- They are the programming equivalent of bad grammar and are caught by the Java compiler.
+	- Ex) 
+- Logic errors (BUGS!)
+	- Occur when you write code that doesn’t perform the task it is intended to perform.
+	- Debugging = process of finding/eliminating bugs from programs
+- Runtime errors 
+	- Logic errors that are so severe that Java stops your program from executing.
+	- Example
+		- divide by 0
+		- reading data from non-existent file
+

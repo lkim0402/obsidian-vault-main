@@ -1,0 +1,23 @@
+- [[General terms to understand Docker]]
+- [[Docker Introduction]]
+	- [[Docker Advantages]]
+	- [[Docker registries & docker hub]]
+	- [[Dockerfile]]
+		- [[Writing Dockerfile Example]]
+	- [[Docker Commands]]
+	- [[Docker Image Build and Deployment]]
+- Practices, with java/spring
+	- [[Docker with java]]
+	- [[Simple connection with PostgreSQL]]
+	- [Connection with Spring](https://calm-individual-12a.notion.site/Spring-Boot-252c6b709828816bb508eb8f414b5fff) (useful, to review)
+- [[Docker Docs Tips]]
+- [[Docker Practical Tips]]
+	- [More here](https://calm-individual-12a.notion.site/Docker-252c6b7098288168a582c01d798674fa)
+# More docker stuff
+- [[Docker Network]]
+- [[Docker Volume]]
+- [[Docker Compose]]
+	- [[dockerfile vs docker-compose]] (todo)📌
+- [[Containers VS Virtual Machines (VMs)]] (todo)📌
+# K8s
+- [[Kubernetes (k8s)]]

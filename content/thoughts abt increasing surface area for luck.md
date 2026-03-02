@@ -1,0 +1,19 @@
+- increasing surface area for luck makes you more agenic
+	- [[on agency & being agentic]]
+- [How to increase your surface area for luck, Cate Hall (substack)](https://usefulfictions.substack.com/p/how-to-increase-your-surface-area)
+	- **"One distinguishing feature I’ve noticed among people who are unusually successful is that they just try a lot of stuff — socially, intellectually, professionally. It’s the rate of experimentation, the number of shots on goal, that provides the magic, not the percentage of successes, which might be very low at first."**
+	- the more times u interact with the outside world, the more chances you have to get lucky!
+		- finding collaborators, friends, projects, etc
+	- operate from a place of genuine curiosity
+		- meeting ppl outside ur field -> u will have a wider network + learn things u can't in a formal learning setting
+		- talking to engineers rom an ai lab directly teaches u waaaay more than what u can get from a million article or tweets -> At any point in time, the latest information in a field won't be written down!
+		- ofc not all convo is useful (u can't know in advance)
+	- assume ur auditioning or a bigger role
+		- if u assume that ur aiming for a future that will hold u to a much higher standard -> u will do well because performing less than excellent would be embarrassing
+			- ppl who behave like this often end up there
+	- give before u take
+		- there's value in having connections to trust like family
+		- only one way -> act with generosity 
+	- be more public (like show ur work! or learn in public)
+	- host events
+		- casual meetings to big meetups. lots of ppl want more social interaction, but few are willing to initiate events. even though u have networks, it's important to densify them.

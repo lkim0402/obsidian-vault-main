@@ -1,0 +1,36 @@
+- https://paulgraham.com/hp.html
+- computer science is a hodgepodge
+	- mathematicians - writing rigorous proofs
+	- the actual "scientists" - studying the behavior of algorithms/history of computers, etc
+	- the hackers - creating beautiful software - computers are just a medium of expression, as concrete is for architects or paint for painters
+		- So hackers start original, and get good, and scientists start good, and get original
+- hackers need to understand
+	- the theory of computation as much as painters need to understand paint chemistry
+	- calculate time and space complexity
+	- turing completeness
+	- concept of a state machine
+- best sources of ideas are not the other fields that have the word "computer" in their names, but the other fields inhabited by makers
+- no place for hackers
+	- universities force hackers to be scientists, often conpelling hackers to write publications
+	- companies force hackers to be engineers - they don't design but they implement the design
+- one way to build great software is start ur own startup therefore
+	- problem
+		- so much to do besides writing software
+		- have to prioritize software that makes money rather than fun software
+- day job
+	- a concept notoriously known to all makers - divide the work that u do for money & the work u love 
+	- open source projects on the side
+	- "When we interviewed programmers, the main thing we cared about was what kind of software they wrote in their spare time. You can't do anything really well unless you love it, and if you love to hack you'll inevitably be working on projects of your own."
+
+- look at makers 
+	- just like how artists learn by doing, hackers learn by doing
+	- just like how artists learn from masters, hackers learn by looking at good programs
+	- art starts from sketch, a gradual refinement 
+	- craft in user's point of view, must have empathy to do great work
+		- It turns out that looking at things from other people's point of view is practically the secret of success
+-   Relentlessness wins because
+	- in the aggregate, unseen details become visible. 
+	- All those unseen details combine to produce something that's just stunning, like a thousand barely audible voices all singing in tune.
+- empathy
+	- One way to tell how good people are at empathy is to watch them explain a technical question to someone without a technical background
+	- You need to have empathy not just for your users, but for your readers. It's in your interest, because you'll be one of them. Many a hacker has written a program only to find on returning to it six months later that he has no idea how it works

@@ -1,0 +1,8 @@
+- Used when we want to use placeholders
+- Ex) `printf("hello %s", name);`
+- Types
+	- `%c`
+	- `%f`
+	- `%i` - integer
+	- `%li`
+	- `%s`

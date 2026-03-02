@@ -1,0 +1,9 @@
+- A powerful, multitasking, multi-user [[Operating systems (OS)|OS]] that serves as the basis for many modern [[Operating systems (OS)|OS]] 
+	- multitasking: can run multiple applications at the same time
+	- multi-user: can have different permission levels active at the same time
+- was popular because it was written in C and was easily applicable to other computers
+- Many operating systems wanted to copy unix => POSIX
+	- contained rules to be considered as another Unix version
+	- MacOS and IOS are both official Unix OS
+- first owned by AT&T
+	- which means proprietary << led to development of [[The GNU project]]

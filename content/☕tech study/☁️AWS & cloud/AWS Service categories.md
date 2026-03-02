@@ -1,0 +1,16 @@
+- Self Service & Managed Services 
+	- Two main kinds of services
+		- You can mix & match different services as you need
+	- Self Service
+		- Do it yourself
+		- EC2 - configure and launch a server -> only the hardware is managed by AWS
+	- Managed Services
+		- AWS manages the hard parts.
+		- Partially configurable
+		- Can be used together with other services (self-service)
+- https://aws.amazon.com/ > products
+	- some services do show up multiple times in different categories
+	- some listed things aren't actually services but features (lol)
+- Group
+	![[Pasted image 20250314203226.png]]
+	- The groups solve different problems & do different workloads

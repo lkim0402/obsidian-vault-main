@@ -1,0 +1,192 @@
+- logistics
+	- nine 1-hr lectures
+	- loots to learn but obv you can't do everything (it's like exposure therapy lol)
+	- you're gonna learn about the tools that u should go read more about them urself / experiment them urself 
+	- assignments -> how u will get most of the class
+	- this is actually done in 2 weeks!
+# terminal & shell
+- GUIs are fine, or like agentic interfaces, voice interfaces, VR, neural interfaces..
+	- the realities are those interfaces are specialized
+	- only things you can do are things that are programmed into that program to do
+- *shell* - textual interface for the computer
+	- a program on ur computer that lets you give inputs commands and prints outputs of commands
+		- core language to interact with the computer
+		- u can write & chain commands however you want
+	- existed before all the GUIs and all the other interfaces
+	- most used is *Bash*, and *zsh*
+		- there are different shells for different purposes
+- *terminal*
+	- a shell runs in a *terminal*, the GUI window that is around it
+		- the terminal runs a shell
+		- computers has some kind of terminal w/ some kind of shell
+- why use a shell?
+	- much faster than clicking around! 
+	- you can *automate*, combine programs (combinatorial thinking), and *CI*
+		- the prompt that I type is actually a file, a pash program that gets executed!
+	- useful with open source community
+		- any open source tool will use the shell most of the time
+		- a lot of how the software is built behind the scenes, the pipelines are done using shell commands!
+
+# shell
+- the prompt
+	- main interface you have to your shell
+	- `leekim@my-laptop:~$`
+		- my username is `leekim`, my host name of machine is `my-laptop` 
+		- `:` is a separator
+		- `~` - home directory
+		- `$` - tells me that I'm not the admin user
+	- on the prompt, you type commands u want to be executed
+		- the simplest ones are the name of the program
+			- `date`
+		- use arguments, things that follow the program name in the command
+			- `echo hello world`
+			- `echo hello \\\ world` -> escaping ("do not split this, the space is part of the argument")
+		- the programs are usually built in to your computer
+- argument parsing in bash
+	- you take the string (the text) the user gave you, you split it at whitespace, and each splitted word is one argument, and the 1st argument is the command of the program to execute
+	- you might run into argument parsing a lot, since when writing the command lines yourself, it can be annoying to get the quoting correct
+- important programs
+	- `man`
+		- pass in another program & explains how to use that program
+		- `man echo`, `man date`
+	- `--help`
+		- slightly shorter than the `man` page
+		- `echo --help`
+	- `cd`
+		- absolute path -> uses `/`
+		- relative path -> u can use `.` and `..`
+- `Tab`
+	- `Tab` in bash gives u autocomplete! (type few letters first + `Tab`)
+	- double press tab gives u all the available options
+- other useful tools
+	- `ZOxide` - remembers all the paths you've ever `cd`'d into
+# programs
+- But how does the shell know how to find programs like `date` or `echo`? 
+- If the shell is asked to execute a command, it consults an _environment variable_ called `$PATH` 
+	- `$PATH` lists which directories the shell should search for programs when it is given a command, separated by `:`
+- So when we run the `echo` command:
+	- the shell sees that it should execute the program `echo` 
+	- uses `$PATH` to get the `:`-separated list of directories, then searches a file by that name
+	- if it finds it, it runs it (assuming the file is executable)
+- `which <program>`
+	- we can find which file (the location) is executed for a given program
+	- `which echo` gives us `usr/bin/echo`
+- seeing *all* the programs we're able to execute in the shell
+	- `ls /bin`
+- simple programs discovered
+	- `cat file`, which prints the contents of `file`.
+	- `sort file`, which prints out the lines of `file` in sorted order.
+		- `sort -u` - sorts & eliminates duplicates
+	- `uniq file`, which eliminates consecutive duplicate lines from `file`.
+	- `head file` and `tail file`, which respectively print the first and last `n` lines of `file`.
+		- `n` by default is 10, but u can set it to something else
+		- `head -n4 <data>`
+- `grep`
+	- a file searcher, searches for things in files that match a particular pattern
+	- `grep <pattern> <file>`
+		- `grep 3 data` -> arguments are a pattern, and a file to search in
+		- the pattern is *regex*!
+	- `grep -r grep .`
+		- `-r` : recursively search in a directory
+- `sed`
+	- a programmatic file editor, it has its own programming language for making automated edits to files
+	- allows you to program the way that it will edit your file
+	- most common use
+		- `missing:~$ sed -i 's/pattern/replacement/g' file`
+			- replaces all instances of `pattern` with `replacement` in `file`
+			-  `-i`: we want the substitutions to happen *inline* (instead of creating a new file -> modifying the original file)
+			- `s/`: way to express in the sed programming language that we want a *substitution*
+			- `/`: separates the pattern from the replacement
+			- `/g`: indicates that we want to replace *all* occurrences on each line rather than just the first
+				- stands for "global" in the file
+		- `missing:~$ sed -i 's/pattern/replacement/g' file */*.md`
+			- `*/*.md`
+				- *glob* = patterns used to match filenames or paths using wildcards
+				- When you use a glob, the shell (not the program, like sed) scans your file system and *expands the pattern into a list of actual filenames* before running the command
+				- so im saying, look for in any directory look for any file that ends with `.md`
+		- `sed -i 's/user_[0-9]*/DELETED_USER/g' file`
+			- instead of using just texts (like "pattern" a while ago), you can put regex in there!
+	- as with `grep`, `pattern` is also regex
+- `find`
+	- finds files -> you tell the find program the kind of files you're looking for, and it will search wherever you tell it to for files that match that structure
+		- recursive by default, but u also can set a max depth using `-maxdepth <#>`
+	- `find ~/Downloads -type f -name "*.zip" -mtime +30`
+		- `-mtime` : last modified
+	- `find ~ -type f -size +100M -exec ls -lh {} \;`
+		- finds files larger than 100M in your home directory & lists them
+		- `-exec` takes a *command* terminated with a stand-alone `;` (which we need to escape like a space) where `{}` is replaced with each matching file path by `find`
+			- like a for each loop!
+			- `ls -lh` is the command you want to run (list long human readable - lists with longer info)
+			- `{}` is the placeholder (like it will be `ls -lh movie.mp4`, iterating thru the files it found)
+		- `\;` - end of the -exec command
+			- the shell can know if the next commands are part of exec or not
+	- `find . -name "*.py" -exec grep -l "TODO" {} \;`
+		- `-l`: "files with matches"
+			- It changes the behavior of `grep` so that instead of printing the _lines of code_ containing "TODO", it only prints the **filename** itself
+		- finds any `.py` files with TODO items in them
+- `awk`
+	- like sed, it has its own programming language. it's for *parsing files*
+	- split a file by whitespace and lines, let you write expressions over the result of parsing in that way
+	- By far the most common use of awk is for data files with a regular syntax (like CSV files) where you want to extract only certain parts of every record (i.e., line):
+	- `awk '{print $2}' data`
+		- Prints the second whitespace-separated column of every line of file
+			- `print $2` -> print the second field per line! the default field separator is whitespace
+		- `{}` indicates "run this", u can write a pattern before this!
+	- `awk -F, '{print $2}' data`
+		- `-F` -> makes `,` as the separator
+		- awk can do much more — filtering rows, computing aggregates, and more 
+
+- Example of putting everything together:
+```bash
+missing:~$ ssh myserver 'journalctl -u sshd -b-1 
+  | grep "Disconnected from"' \
+  | sed -E 's/.*Disconnected from .* user (.*) [^ ]+ port.*/\1/' \
+  | sort | uniq -c \
+  | sort -nk1,1 | tail -n10 \
+  | awk '{print $2}' | paste -sd,
+postgres,mysql,oracle,dell,ubuntu,inspur,test,admin,user,root
+```
+- grabs SSH logs from a remote server (we’ll talk more about `ssh` in the next lecture)
+- searches for disconnect messages
+	- "Disconnected from" gets printed when someone tries to log in but either ended their session or failed to log in
+- extracts the username from each such message
+	- extracts the username the failed logged in user tried to use
+	- get the unique ones, `-c` is for count
+- sort the output numerically using the 1st column, get the last 10 (`tail`), the most commons
+- prints the top 10 usernames (and not the 1st column count) comma-separated
+#  `|` and `>`
+- `|`
+	- run the left program, take its output, and make that the input to the right of the pipe
+- `>`
+	- redirects output to a new file
+	- `date > thedate.txt`
+		- overwrites the file. use `>>` to append
+# conditionals, loops
+- conditionals
+	- `if command1; then command2; command3; fi`
+		- ends with `fi`
+		- example of if else
+			- `if grep 2026 thedate.txt; then echo "it's 2026"; fi`
+			- run grep, if it exit successfully, then it can run the next command
+- while loops
+	- `while command1; do command2; command3; done`
+- for loops
+	- `for varname in a b c d; do command; done`
+	- `for varname in $(seq 1 10); do echo "$varname"; done`
+		- `seq` -> prints the numbers from 1 to 10 inclusive, then replaces the whole $() with that command’s output
+# test
+- use `test` or `[`, they are the same
+- `if [ "hello" = "world" ]; then echo "equal"; else echo "not equal"; fi`
+- `if [ -f thedate.txt ]; then echo "thedate exists"; fi`
+	- if the file exists
+- note
+	- `if`, `|`, and `cd` are not actually programs!
+	- they are built into the shell, and part of the bash programming language
+# files (programs)
+- writing command lines can get real annoying the longer they get
+- u can make them into a file!
+- at the top: `#!/path` -> the `#!` is a shebang
+	- lot of files will start with this
+	- When a file that starts with the magic incantation `#!/path` is executed, the shell will start the program at `/path`, and pass it the contents of the file as input
+		- `/bin/sh < lecture.sh`
+	- In the case of a shell script, this means passing the contents of the shell script to `/bin/bash`, but you can also write Python scripts with a shebang line of `/usr/bin/python`

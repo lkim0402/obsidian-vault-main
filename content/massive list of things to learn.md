@@ -1,0 +1,12 @@
+- most things are from finda
+
+ - mentioned/recs to learn (tools/topics)
+	- mac & the terminal
+		- zsh theme
+		- tmux, ice?
+		- linux commands
+	- claude code
+	- n8n
+	- python things
+		- `tqdm`
+		- `orjson`

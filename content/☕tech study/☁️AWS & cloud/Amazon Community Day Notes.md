@@ -1,0 +1,120 @@
+# 에이전트 AI 시대 클라우드 
+- agentic ai
+	- strands agent
+	- production 수준으로 사용하려면
+		- Amazon Bedrock agentcore
+- 미래 개발자
+	- product engineering
+	- system architecture
+		- 전체적인 시스템 구조 이해, ai가 생성한 코드가 시스템에 잘 통합
+	- 학습과 실험 정신
+		- 지속적인 새로운 ai 실험, 구현 테스트 반복, 토큰 전략 수립, 인간 소통 집중
+# lecture 1
+- aws saa c03 
+- Cloud vs on premise
+- 서버란?
+	- 노트북, pc -> 둘다 서버일수도 있고 아닐수도
+	- 데이타 센터
+		- 서버 스펙?
+			- 본체 - cpu, 메모리, 디스크 등
+			- 결국 본체만 있으면 됨
+		- 그래서 데이타 센터에는 수많은 서버들, kvm, 향온항습기, 다양한 네트워크 장비가 있음
+		- 온프레미스는 네트워크 환경이 복잡한데, aws는 유저가 간단하게 설정할 수 있음
+		- 스토리지
+			- 어떻게 그냥 서버를 클릭만으로 늘릴 수 있을까?
+- 전통적인 배포환경
+	- url = unique resource locator
+	- url을 입력하는 것은 내가 거기에 들어가는게 아니라 인터넷상에서 그 리소스를 달라는 것 -> 서버
+	- nginx (웹서버/http server)
+	- 프론트
+		- 파일 서버에 올리면됨 (정적 파일)
+	- 백엔드
+		- app.jar같은 파일 업로드 하고 실행하면 됨
+- 클라우드
+	- cloudfront caching
+	- ecs/eks
+
+# AWS Cloud Club
+- 유덥 쪽 알아보기
+- 이벤트 쪽 운영
+- 학교 내 캡틴
+		- $200 credit, aws cert voucher, networking with other aws captains! (best benefit)
+- 활동
+	- 학교 내부, 외부
+	- 활동스터디, 발표
+	- 해커톤, 초청, 이력서 첨삭
+
+# Amazon Q, CDK
+- Lots of services in Amazon Q
+	- Amazon Q developer
+		- aws 어플리케이션을 이해하고 구축하고 확장하고 운영하는데 도움을 줄 수 있는 ai기반 대화형 agent
+		- vs code
+		- 로컬 파일 시스템 접근, 수정 가능
+		- aws cli 통합으로 클라우드 관리
+		- 개발중인 코드와 Q CLI 내용이 같은 화면에서 활용 가능
+- AWS CDK
+	- aws가 만든 IaC 오픈소스 프로젝트
+	- 친숙한 프로그래밍 언니 typescript
+	- 어플리케이션 개발자들의 인프라 관여도 상승!
+	- using console only can get tedious and complex/confusing
+	- similar services
+		- Terraform
+		- Cloudformation
+		- AWS CDK
+		- you can compare and contrast thru different forums
+- working
+	- 문제점 개선 with Q
+		- 서버의 부하가 발생할 정도의 해킹시도
+		- 늘어나는 트래픽과 기존 리소스의 한계
+		- 고갈된 크레딧, 인프라 비용 증가
+		- 수동 배포
+	- api key만 넘겨주면 리소스 분석해줌
+- 빠른 PoC로 검증하며 TO BE 아키텍쳐 도출
+	1. context file 준비 -> q 주입
+		- 현재 상황 진단 후 문제점/기대 상황
+		- 외부 ㅓㅁ증 필요 사항
+		- 결정사항 vs 검증 필요사항 분리 후 전달
+	2. 테스트 환경에서 poc 검증
+		- q가 그냥 다이어그램을 그리고 유저에게 넘겨줌!
+	3. To-BE 아키텍쳐 도출
+- Tips/warnings
+	- 각 리소스 네이밍 코드 컨벤션 통일하기
+		- 아니면 q가 만듦
+	- 배포가 안될수도 있음
+		- 크게 3가지
+			- 일방적인 경우 (콘솔에서도 안됨) - health check, resource 한계초과
+			- cdk에서의 경우
+				- 스택간 의존성 문제
+				- drift detection 문제
+					- console, cdk설정 다름
+			- cross stack reference blocking
+		- 해결된 사례가 없을 수 있음
+# 서버 관리 딸깍
+- 수동 관리 pain point
+	- 시나리오 - 신규 agent 설치, 긴급 보안 패치, 유저 관리 -> 다 자동화 가능!
+- aws systems manager
+	- ssh/rdp없는 안전한 대규모 서버 운영 자동화
+	- 선언형으로 자동화 -> document 하나 만들고 주면 됨
+	- main features dev op engineers usually use
+		- Session Manager
+			- CLI
+		- parameter store
+			- stores api keys
+		- run command 
+			- document를 실행함
+			- state manager
+				- 어떤 조건을 유지해야할 때 편리함
+				- run command의 고도화 버젼
+- 자동화를 위한 구성 기능
+	- Documentation
+		- 무엇을 할지 정의하는 json/yaml template
+	- Distributer
+
+---
+- 왜 도구의 수준이 좋아지는데, 주니어들에게는 여전히 어려울까
+	- 위임과 통제를 배울수록 신입/주니어들은 부담/두려움이 줄어든다
+- kiro
+	- IDE
+	- 스펙 중심 개발
+- Q developer
+	- 

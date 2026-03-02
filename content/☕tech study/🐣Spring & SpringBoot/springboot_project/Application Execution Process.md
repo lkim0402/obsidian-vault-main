@@ -1,0 +1,3 @@
+- Related: [[Starting a Spring Boot Application]] - `SpringApplication.run()`
+- Just read this actually
+	- https://calm-individual-12a.notion.site/210c6b709828814ebaadf77dae6f6a42
