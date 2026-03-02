@@ -1,3 +1,5 @@
-- right now 
 - https://quartz.jzhao.xyz/setting-up-your-GitHub-repository
-- instead of using `github sync` plugin, 
+- to update local changes to deployment:
+	- just `npx quartz sync` -> manually
+	- `github sync` plugin ->
+- [x] delete vercel deployment (why was i using this?)
